@@ -1,190 +1,300 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>採用情報 - 大栄建築設備 有限会社</title>
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' https://cdn.tailwindcss.com https://fonts.googleapis.com https://fonts.gstatic.com https://cdnjs.cloudflare.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; frame-src 'self' https://www.google.com;">
+    <title>旭川の求人情報 - 大栄建築設備 有限会社 | 水道・設備工事</title>
+    <meta name="description" content="旭川市の大栄建築設備有限会社の求人情報。水道・設備工事の配管工、現場管理、事務職を募集中。未経験者歓迎、資格取得支援あり。">
+    <meta name="keywords" content="旭川市,求人,水道,設備,大栄,配管工,正社員,未経験歓迎,建設業">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="採用情報 - 大栄建築設備 有限会社">
+    <meta property="og:description" content="大栄建築設備有限会社の採用情報。配管工、現場管理、事務職を募集中。">
+
+    <!-- Structured Data (JobPosting) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "JobPosting",
+      "title": "配管工スタッフ",
+      "description": "旭川市内及び近郊での給排水衛生設備工事、浄化槽設備工事などの配管工事全般。",
+      "identifier": {
+        "@type": "PropertyValue",
+        "name": "大栄建築設備有限会社",
+        "value": "RECRUIT-001"
+      },
+      "datePosted": "2024-01-01",
+      "validThrough": "2025-12-31",
+      "employmentType": "FULL_TIME",
+      "hiringOrganization": {
+        "@type": "Organization",
+        "name": "大栄建築設備有限会社",
+        "sameAs": "https://uruacha.github.io/daiei/",
+        "logo": "https://uruacha.github.io/daiei/assets/img/logo.png"
+      },
+      "jobLocation": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "神楽岡8条3丁目2番22号",
+          "addressLocality": "旭川市",
+          "addressRegion": "北海道",
+          "postalCode": "078-8318",
+          "addressCountry": "JP"
+        }
+      },
+      "baseSalary": {
+        "@type": "MonetaryAmount",
+        "currency": "JPY",
+        "value": {
+          "@type": "QuantitativeValue",
+          "value": 250000,
+          "unitText": "MONTH"
+        }
+      }
+    }
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Noto+Serif+JP:wght@400;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="assets/css/design.css" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         'primary-bg': '#F8FAFC',
-                        'primary-text': '#1E293B',
-                        'accent': '#0F172A',
-                        'accent-light': '#334155',
+                        'primary-text': '#334155', /* Slightly softer than pure black */
+                        'accent': '#0B1120', /* Deep Navy */
+                        'accent-light': '#1E293B',
                         'section-bg': '#F1F5F9',
-                        'water-blue': '#0EA5E9',
+                        'water-blue': '#0284C7', /* Trust Blue */
                         'light-blue': '#38BDF8',
-                        'deep-blue': '#0C4A6E',
-                        'modern-gray': '#64748B'
+                        'deep-blue': '#075985',
+                        'modern-gray': '#64748B',
+                        'gold': '#B49B66' /* Premium accent */
                     },
                     fontFamily: {
-                        'serif': ['Playfair Display', 'Noto Serif JP', 'serif'],
-                        'sans': ['Noto Sans JP', 'sans-serif']
+                        'serif': ['"Noto Serif JP"', 'serif'],
+                        'sans': ['"Noto Sans JP"', 'sans-serif'],
+                        'english': ['"Outfit"', 'sans-serif']
                     },
                     animation: {
-                        'float': 'float 3s ease-in-out infinite',
-                        'fade-in-up': 'fadeInUp 0.6s ease-out',
-                        'slide-in-right': 'slideInRight 0.8s ease-out'
+                        'float': 'float 6s ease-in-out infinite',
+                        'flow': 'flow 15s ease infinite',
+                        'fade-in-up': 'fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1)',
+                        'slide-in-right': 'slideInRight 0.8s cubic-bezier(0.16, 1, 0.3, 1)'
                     },
                     keyframes: {
                         float: {
                             '0%, 100%': { transform: 'translateY(0px)' },
-                            '50%': { transform: 'translateY(-10px)' }
+                            '50%': { transform: 'translateY(-15px)' }
+                        },
+                        flow: {
+                            '0%': { backgroundPosition: '0% 50%' },
+                            '50%': { backgroundPosition: '100% 50%' },
+                            '100%': { backgroundPosition: '0% 50%' }
                         },
                         fadeInUp: {
-                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '0%': { opacity: '0', transform: 'translateY(40px)' },
                             '100%': { opacity: '1', transform: 'translateY(0)' }
                         },
                         slideInRight: {
-                            '0%': { opacity: '0', transform: 'translateX(30px)' },
+                            '0%': { opacity: '0', transform: 'translateX(40px)' },
                             '100%': { opacity: '1', transform: 'translateX(0)' }
                         }
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 40px -10px rgba(0,0,0,0.08)',
+                        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.07)'
                     }
                 }
             }
         }
     </script>
     <style>
+        body {
+            letter-spacing: 0.03em;
+        }
+
         .glass-morphism {
-            backdrop-filter: blur(16px) saturate(180%);
-            -webkit-backdrop-filter: blur(16px) saturate(180%);
-            background-color: rgba(255, 255, 255, 0.75);
-            border: 1px solid rgba(255, 255, 255, 0.125);
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
         }
-        
+
         .hero-gradient {
-            background: linear-gradient(135deg, rgba(12, 74, 110, 0.9) 0%, rgba(15, 23, 42, 0.8) 50%, rgba(0, 0, 0, 0.6) 100%);
+            background: linear-gradient(135deg, rgba(11, 17, 32, 0.85) 0%, rgba(7, 89, 133, 0.75) 50%, rgba(11, 17, 32, 0.85) 100%);
+            background-size: 200% 200%;
+            animation: flow 15s ease infinite;
         }
-        
+
         .floating-element {
-            animation: float 3s ease-in-out infinite;
+            animation: float 6s ease-in-out infinite;
         }
-        
+
         .text-gradient {
-            background: linear-gradient(135deg, #0F172A 0%, #0EA5E9 100%);
+            background: linear-gradient(135deg, #0B1120 0%, #0284C7 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        
+
         .water-pattern {
-            background-image: 
-                radial-gradient(circle at 20% 50%, rgba(14, 165, 233, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(56, 189, 248, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 40% 80%, rgba(14, 165, 233, 0.05) 0%, transparent 50%);
+            background-color: #F8FAFC;
+            background-image:
+                radial-gradient(at 0% 0%, rgba(2, 132, 199, 0.03) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(2, 132, 199, 0.03) 0px, transparent 50%);
         }
     </style>
 </head>
+
 <body class="bg-primary-bg text-primary-text font-sans water-pattern">
     <!-- Header -->
     <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
                 <div class="text-3xl font-bold text-white font-serif tracking-wide" id="logo">
-                    <span class="text-white hover:text-water-blue transition-colors duration-300 tracking-wider">大栄建築設備</span>
+                    <span
+                        class="text-white hover:text-water-blue transition-colors duration-300 tracking-wider">大栄建築設備</span>
                     <span class="text-water-blue font-light text-xl ml-2">有限会社</span>
                 </div>
                 <ul class="hidden md:flex space-x-8 text-white font-medium" id="nav-menu">
                     <li><a href="index.html" class="hover:text-water-blue transition-all duration-300 relative group">
-                        ホーム
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-water-blue transition-all duration-300 group-hover:w-full"></span>
-                    </a></li>
+                            ホーム
+                            <span
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-water-blue transition-all duration-300 group-hover:w-full"></span>
+                        </a></li>
                     <li><a href="service.html" class="hover:text-water-blue transition-all duration-300 relative group">
-                        サービス
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-water-blue transition-all duration-300 group-hover:w-full"></span>
-                    </a></li>
+                            サービス
+                            <span
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-water-blue transition-all duration-300 group-hover:w-full"></span>
+                        </a></li>
                     <li><a href="recruit.html" class="text-water-blue relative group">
-                        採用情報
-                        <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-water-blue"></span>
-                    </a></li>
+                            採用情報
+                            <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-water-blue"></span>
+                        </a></li>
                     <li><a href="access.html" class="hover:text-water-blue transition-all duration-300 relative group">
-                        アクセス
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-water-blue transition-all duration-300 group-hover:w-full"></span>
-                    </a></li>
+                            アクセス
+                            <span
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-water-blue transition-all duration-300 group-hover:w-full"></span>
+                        </a></li>
                 </ul>
-                <button class="md:hidden text-white p-2 rounded-lg hover:bg-white hover:bg-opacity-20 transition-all duration-300" id="menu-toggle">
+                <button
+                    class="md:hidden text-white p-2 rounded-lg hover:bg-white hover:bg-opacity-20 transition-all duration-300"
+                    id="menu-toggle">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
                 </button>
             </div>
             <!-- Mobile menu -->
             <div class="md:hidden hidden glass-morphism rounded-xl mt-4 p-4" id="mobile-menu">
                 <ul class="flex flex-col space-y-3 text-primary-text">
-                    <li><a href="index.html" class="block py-2 px-4 hover:bg-accent hover:text-white rounded-lg transition-all duration-300">ホーム</a></li>
-                    <li><a href="service.html" class="block py-2 px-4 hover:bg-accent hover:text-white rounded-lg transition-all duration-300">サービス</a></li>
+                    <li><a href="index.html"
+                            class="block py-2 px-4 hover:bg-accent hover:text-white rounded-lg transition-all duration-300">ホーム</a>
+                    </li>
+                    <li><a href="service.html"
+                            class="block py-2 px-4 hover:bg-accent hover:text-white rounded-lg transition-all duration-300">サービス</a>
+                    </li>
                     <li><a href="recruit.html" class="block py-2 px-4 bg-accent text-white rounded-lg">採用情報</a></li>
-                    <li><a href="access.html" class="block py-2 px-4 hover:bg-accent hover:text-white rounded-lg transition-all duration-300">アクセス</a></li>
+                    <li><a href="access.html"
+                            class="block py-2 px-4 hover:bg-accent hover:text-white rounded-lg transition-all duration-300">アクセス</a>
+                    </li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center justify-center overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');background-size:cover;background-position:center;">
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden"
+        style="background-image: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');background-size:cover;background-position:center;">
         <div class="absolute inset-0 hero-gradient"></div>
-        
+
         <!-- Floating geometric shapes -->
         <div class="absolute inset-0 overflow-hidden pointer-events-none">
-            <div class="absolute top-20 left-10 w-32 h-32 border border-white border-opacity-20 rounded-full floating-element" style="animation-delay: 0s;"></div>
-            <div class="absolute top-40 right-20 w-20 h-20 border border-water-blue border-opacity-30 rounded-full floating-element" style="animation-delay: 1s;"></div>
-            <div class="absolute bottom-32 left-20 w-24 h-24 border border-white border-opacity-10 rounded-full floating-element" style="animation-delay: 2s;"></div>
+            <div class="absolute top-20 left-10 w-32 h-32 border border-white border-opacity-20 rounded-full floating-element parallax-element"
+                style="animation-delay: 0s;" data-speed="0.05"></div>
+            <div class="absolute top-40 right-20 w-20 h-20 border border-water-blue border-opacity-30 rounded-full floating-element parallax-element"
+                style="animation-delay: 1s;" data-speed="-0.03"></div>
+            <div class="absolute bottom-32 left-20 w-24 h-24 border border-white border-opacity-10 rounded-full floating-element parallax-element"
+                style="animation-delay: 2s;" data-speed="0.08"></div>
         </div>
-        
+
         <div class="relative z-10 text-center text-white px-6 max-w-6xl mx-auto">
             <div class="floating-element mb-8">
-                <div class="inline-block p-3 rounded-full bg-white bg-opacity-10 backdrop-blur-sm border border-white border-opacity-20 mb-6">
+                <div
+                    class="inline-block p-3 rounded-full bg-white bg-opacity-10 backdrop-blur-sm border border-white border-opacity-20 mb-6">
                     <svg class="w-8 h-8 text-water-blue" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                 </div>
             </div>
-            
-            <h1 class="text-5xl md:text-7xl font-serif font-bold mb-8 leading-tight">
-                <span class="block text-white opacity-95" data-aos="fade-up" data-aos-delay="200">一緒に働く</span>
-                <span class="block text-water-blue text-6xl md:text-8xl" data-aos="fade-up" data-aos-delay="400">仲間を</span>
-                <span class="block text-white opacity-95" data-aos="fade-up" data-aos-delay="600">募集しています</span>
+
+            <h1 class="text-5xl md:text-7xl font-serif font-bold mb-8 leading-tight tracking-tight">
+                <span class="block text-white opacity-95 drop-shadow-lg" data-aos="fade-up"
+                    data-aos-delay="200">旭川で一緒に働く</span>
+                <span
+                    class="block text-transparent bg-clip-text bg-gradient-to-r from-light-blue to-white text-6xl md:text-8xl my-4 font-english tracking-tighter"
+                    data-aos="fade-up" data-aos-delay="400">TEAM</span>
+                <span class="block text-white opacity-95 drop-shadow-lg" data-aos="fade-up"
+                    data-aos-delay="600">を募集しています</span>
             </h1>
-            
-            <div class="w-24 h-1 bg-water-blue mx-auto mb-8 rounded-full" data-aos="fade-up" data-aos-delay="800"></div>
-            
-            <p class="text-xl md:text-2xl mb-12 opacity-95 max-w-4xl mx-auto leading-relaxed font-light" data-aos="fade-up" data-aos-delay="1000">
+
+            <div class="w-24 h-1 bg-gradient-to-r from-water-blue to-light-blue mx-auto mb-8 rounded-full shadow-[0_0_15px_rgba(56,189,248,0.5)]"
+                data-aos="fade-up" data-aos-delay="800"></div>
+
+            <p class="text-xl md:text-2xl mb-12 opacity-95 max-w-4xl mx-auto leading-relaxed font-light"
+                data-aos="fade-up" data-aos-delay="1000">
                 現在30代～60代のスタッフ6名が活躍中！<br class="hidden md:block">
                 手に職をつけて、やりがいのある仕事を<br class="hidden md:block">
                 一緒に始めませんか。
             </p>
-            
+
             <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="1200">
-                <a href="tel:0166-65-6624" class="group relative inline-flex items-center justify-center px-8 py-4 bg-water-blue text-white font-bold text-lg rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                <a href="tel:0166-65-6624"
+                    class="group relative inline-flex items-center justify-center px-8 py-4 bg-water-blue text-white font-bold text-lg rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
                     <span class="relative z-10 flex items-center">
                         電話で応募
-                        <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                        <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300"
+                            fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                         </svg>
                     </span>
-                    <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 rounded-xl transition-opacity duration-300"></div>
+                    <div
+                        class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 rounded-xl transition-opacity duration-300">
+                    </div>
                 </a>
-                
-                <a href="#requirements" class="group inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-medium text-lg rounded-xl hover:bg-white hover:text-deep-blue transition-all duration-300">
+
+                <a href="#requirements"
+                    class="group inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-medium text-lg rounded-xl hover:bg-white hover:text-deep-blue transition-all duration-300">
                     <span class="flex items-center">
                         募集要項を見る
-                        <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                         </svg>
                     </span>
                 </a>
             </div>
         </div>
-        
+
         <!-- Scroll indicator -->
         <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3">
+                </path>
             </svg>
         </div>
     </section>
@@ -196,22 +306,24 @@
             <div class="absolute top-20 left-20 w-64 h-64 border-2 border-accent rounded-full"></div>
             <div class="absolute bottom-20 right-20 w-48 h-48 border border-water-blue rounded-full"></div>
         </div>
-        
+
         <div class="container mx-auto max-w-7xl relative z-10">
             <div class="text-center mb-16" data-aos="fade-up">
-                <div class="inline-block p-3 rounded-full bg-water-blue bg-opacity-10 backdrop-blur-sm border border-water-blue border-opacity-20 mb-6">
+                <div
+                    class="inline-block p-3 rounded-full bg-water-blue bg-opacity-10 backdrop-blur-sm border border-water-blue border-opacity-20 mb-6">
                     <svg class="w-8 h-8 text-water-blue" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                 </div>
-                <h2 class="text-4xl md:text-5xl font-serif font-bold text-gradient mb-6">働きやすい環境です</h2>
-                <div class="w-24 h-1 bg-water-blue mx-auto rounded-full mb-6"></div>
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-accent mb-6">働きやすい環境です</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-water-blue to-light-blue mx-auto rounded-full mb-6"></div>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                     残業や出張も少なく、仕事終わりは家でゆっくり自分の時間を過ごせます
                 </p>
             </div>
-            
-            <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 mb-8 hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 mb-8 hover:shadow-2xl transition-all duration-300"
+                data-aos="fade-up" data-aos-delay="200">
                 <div class="flex items-center mb-6">
                     <div class="w-16 h-16 bg-water-blue bg-opacity-10 rounded-xl flex items-center justify-center mr-6">
                         <div class="text-4xl">👥</div>
@@ -232,7 +344,7 @@
             <div class="text-center mb-12">
                 <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">正直にお話しします</h2>
             </div>
-            
+
             <div class="grid md:grid-cols-2 gap-8">
                 <!-- Challenges -->
                 <div class="bg-gray-50 rounded-xl p-8">
@@ -248,7 +360,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Benefits -->
                 <div class="bg-blue-50 rounded-xl p-8">
                     <h3 class="text-xl font-bold mb-4 text-blue-600">でも、だからこそ...</h3>
@@ -275,13 +387,14 @@
     <section id="requirements" class="py-20 px-6">
         <div class="container mx-auto max-w-7xl">
             <div class="text-center mb-16" data-aos="fade-up">
-                <div class="inline-block p-3 rounded-full bg-water-blue bg-opacity-10 backdrop-blur-sm border border-water-blue border-opacity-20 mb-6">
+                <div
+                    class="inline-block p-3 rounded-full bg-water-blue bg-opacity-10 backdrop-blur-sm border border-water-blue border-opacity-20 mb-6">
                     <svg class="w-8 h-8 text-water-blue" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                 </div>
-                <h2 class="text-4xl md:text-5xl font-serif font-bold text-gradient mb-6">募集要項</h2>
-                <div class="w-24 h-1 bg-water-blue mx-auto rounded-full mb-6"></div>
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-accent mb-6">募集要項</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-water-blue to-light-blue mx-auto rounded-full mb-6"></div>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                     技術を身につけて、地域の暮らしを支える仕事をしませんか
                 </p>
@@ -292,7 +405,9 @@
                 <!-- 1. 募集職種 -->
                 <div class="bg-white rounded-xl shadow-lg p-8">
                     <div class="flex items-center mb-6">
-                        <div class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">1</div>
+                        <div
+                            class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">
+                            1</div>
                         <h3 class="text-2xl font-bold">募集職種</h3>
                     </div>
                     <div class="grid md:grid-cols-3 gap-4">
@@ -315,7 +430,9 @@
                 <!-- 2. 仕事内容 -->
                 <div class="bg-white rounded-xl shadow-lg p-8">
                     <div class="flex items-center mb-6">
-                        <div class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">2</div>
+                        <div
+                            class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">
+                            2</div>
                         <h3 class="text-2xl font-bold">仕事内容</h3>
                     </div>
                     <div class="space-y-4">
@@ -335,7 +452,9 @@
                 <!-- 3. こんな方を募集しています -->
                 <div class="bg-white rounded-xl shadow-lg p-8">
                     <div class="flex items-center mb-6">
-                        <div class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">3</div>
+                        <div
+                            class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">
+                            3</div>
                         <h3 class="text-2xl font-bold">こんな方を募集しています！</h3>
                     </div>
                     <div class="grid md:grid-cols-2 gap-4">
@@ -383,26 +502,28 @@
                                     <h3 class="text-lg font-bold text-accent">勤務地</h3>
                                 </div>
                                 <p class="text-gray-800">北海道旭川市神楽岡8条3丁目2番22号<br>
-                                <span class="text-sm text-gray-600">（神楽岡駅から車5分）</span></p>
+                                    <span class="text-sm text-gray-600">（神楽岡駅から車5分）</span>
+                                </p>
                             </div>
-                            
+
                             <div>
                                 <div class="flex items-center mb-2">
                                     <span class="text-2xl mr-2">⏰</span>
                                     <h3 class="text-lg font-bold text-accent">勤務時間</h3>
                                 </div>
                                 <p class="text-gray-800">7:45～17:30（休憩2時間）<br>
-                                月残業平均時間：10時間以下<br>
-                                <span class="text-sm text-gray-600">３６協定における特別条項 あり</span></p>
+                                    月残業平均時間：10時間以下<br>
+                                    <span class="text-sm text-gray-600">３６協定における特別条項 あり</span>
+                                </p>
                             </div>
-                            
+
                             <div>
                                 <div class="flex items-center mb-2">
                                     <span class="text-2xl mr-2">✨</span>
                                     <h3 class="text-lg font-bold text-accent">休日休暇</h3>
                                 </div>
                                 <p class="text-gray-800">日曜・祝日・不定期土曜<br>
-                                年間休日105日</p>
+                                    年間休日105日</p>
                             </div>
                         </div>
 
@@ -414,10 +535,11 @@
                                     <h3 class="text-lg font-bold text-accent">給与</h3>
                                 </div>
                                 <p class="text-gray-800">日給9,600円〜<br>
-                                （月収25万〜／年収360万〜想定）<br>
-                                <span class="text-sm text-gray-600">＋手当・賞与年2回</span></p>
+                                    （月収25万〜／年収360万〜想定）<br>
+                                    <span class="text-sm text-gray-600">＋手当・賞与年2回</span>
+                                </p>
                             </div>
-                            
+
                             <div>
                                 <div class="flex items-center mb-2">
                                     <span class="text-2xl mr-2">🎁</span>
@@ -425,7 +547,7 @@
                                 </div>
                                 <p class="text-gray-800">社保完備、制服貸与、資格取得支援、退職金制度ほか</p>
                             </div>
-                            
+
                             <div>
                                 <div class="flex items-center mb-2">
                                     <span class="text-2xl mr-2">✓</span>
@@ -433,14 +555,15 @@
                                 </div>
                                 <p class="text-gray-800">3か月（同条件）</p>
                             </div>
-                            
+
                             <div>
                                 <div class="flex items-center mb-2">
                                     <span class="text-2xl mr-2">👥</span>
                                     <h3 class="text-lg font-bold text-accent">採用人数</h3>
                                 </div>
                                 <p class="text-gray-800">2名予定／面接1回<br>
-                                <span class="text-sm text-gray-600">（友達同士応募OK）</span></p>
+                                    <span class="text-sm text-gray-600">（友達同士応募OK）</span>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -457,39 +580,45 @@
         </div>
         <div class="container mx-auto max-w-7xl relative z-10">
             <div class="text-center mb-16" data-aos="fade-up">
-                <div class="inline-block p-3 rounded-full bg-water-blue bg-opacity-10 backdrop-blur-sm border border-water-blue border-opacity-20 mb-6">
+                <div
+                    class="inline-block p-3 rounded-full bg-water-blue bg-opacity-10 backdrop-blur-sm border border-water-blue border-opacity-20 mb-6">
                     <svg class="w-8 h-8 text-water-blue" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M3 8l7.89 7.89a1 1 0 001.42 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        <path
+                            d="M3 8l7.89 7.89a1 1 0 001.42 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                 </div>
-                <h2 class="text-4xl md:text-5xl font-serif font-bold text-gradient mb-6">応募方法</h2>
-                <div class="w-24 h-1 bg-water-blue mx-auto rounded-full mb-6"></div>
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-accent mb-6">応募方法</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-water-blue to-light-blue mx-auto rounded-full mb-6"></div>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                     お気軽にお電話またはメールでご連絡ください
                 </p>
             </div>
 
-            <div class="bg-white rounded-2xl shadow-xl ring-1 ring-gray-200 p-8 md:p-12 hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+            <div class="bg-white rounded-2xl shadow-xl ring-1 ring-gray-200 p-8 md:p-12 hover:shadow-2xl transition-all duration-300"
+                data-aos="fade-up" data-aos-delay="200">
                 <div class="grid md:grid-cols-2 gap-12">
                     <div class="text-center group">
-                        <div class="w-20 h-20 bg-water-blue bg-opacity-10 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:bg-opacity-20 transition-all duration-300">
+                        <div
+                            class="w-20 h-20 bg-water-blue bg-opacity-10 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:bg-opacity-20 transition-all duration-300">
                             <div class="text-water-blue text-4xl">📞</div>
                         </div>
                         <h3 class="text-2xl font-bold mb-6 text-primary-text">お電話での応募</h3>
                         <p class="text-3xl font-bold text-water-blue mb-4">0166-65-6624</p>
                         <p class="text-gray-600">平日 8:00〜17:00</p>
                     </div>
-                    
+
                     <div class="text-center group">
-                        <div class="w-20 h-20 bg-water-blue bg-opacity-10 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:bg-opacity-20 transition-all duration-300">
+                        <div
+                            class="w-20 h-20 bg-water-blue bg-opacity-10 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:bg-opacity-20 transition-all duration-300">
                             <div class="text-water-blue text-4xl">✉️</div>
                         </div>
                         <h3 class="text-2xl font-bold mb-6 text-primary-text">メールでの応募</h3>
-                        <p class="text-lg text-gray-600 mb-4">メールアドレスは準備中です</p>
-                        <p class="text-gray-600">お急ぎの方はお電話にてお問い合わせください</p>
+                        <a href="mailto:d-saiyo@daiei1977.com"
+                            class="text-lg text-water-blue font-bold mb-4 hover:underline block">d-saiyo@daiei1977.com</a>
+                        <p class="text-gray-600">24時間受付中</p>
                     </div>
                 </div>
-                
+
                 <div class="mt-12 p-6 bg-section-bg rounded-xl">
                     <p class="text-gray-600 text-center leading-relaxed">
                         ※応募の際は、お名前・年齢・連絡先・志望動機を簡単にお聞かせください<br>
@@ -524,15 +653,19 @@
     <div class="fixed bottom-0 left-0 right-0 bg-white border-t shadow-lg z-40">
         <div class="container mx-auto px-4 py-3">
             <div class="flex flex-col sm:flex-row gap-3 sm:justify-center">
-                <a href="tel:0166-65-6624" class="flex items-center justify-center bg-accent text-white px-6 py-3 rounded-lg font-medium hover:bg-opacity-90 transition-all">
+                <a href="tel:0166-65-6624"
+                    class="flex items-center justify-center bg-accent text-white px-6 py-3 rounded-lg font-medium hover:bg-opacity-90 transition-all">
                     <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                        <path
+                            d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                     </svg>
                     電話で応募
                 </a>
-                <a href="index.html" class="flex items-center justify-center border-2 border-accent text-accent px-6 py-3 rounded-lg font-medium hover:bg-accent hover:text-white transition-all">
+                <a href="index.html"
+                    class="flex items-center justify-center border-2 border-accent text-accent px-6 py-3 rounded-lg font-medium hover:bg-accent hover:text-white transition-all">
                     <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                     </svg>
                     トップページへ
                 </a>
@@ -541,7 +674,7 @@
     </div>
 
     <!-- Footer with padding for fixed CTA -->
-    <footer class="bg-primary-text text-white py-12 px-4 pb-20">
+    <footer class="bg-accent text-white py-16 px-4 pb-20 border-t border-white/10">
         <div class="container mx-auto max-w-6xl">
             <div class="grid md:grid-cols-3 gap-8">
                 <div>
@@ -564,6 +697,8 @@
             </div>
             <div class="border-t border-gray-600 mt-8 pt-8 text-center text-gray-400">
                 <p>&copy; 2024 大栄建築設備 有限会社. All rights reserved.</p>
+                <a href="privacy.html"
+                    class="text-sm hover:text-white transition-colors mt-2 inline-block">プライバシーポリシー</a>
             </div>
         </div>
     </footer>
@@ -579,11 +714,11 @@
         });
 
         // Header scroll effect with enhanced animations
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             const header = document.getElementById('header');
             const logo = document.getElementById('logo');
             const navMenu = document.getElementById('nav-menu');
-            
+
             if (window.scrollY > 50) {
                 header.classList.add('glass-morphism', 'shadow-lg');
                 header.classList.remove('bg-transparent');
@@ -608,7 +743,7 @@
         });
 
         // Mobile menu toggle with animation
-        document.getElementById('menu-toggle').addEventListener('click', function() {
+        document.getElementById('menu-toggle').addEventListener('click', function () {
             const mobileMenu = document.getElementById('mobile-menu');
             mobileMenu.classList.toggle('hidden');
         });
@@ -627,5 +762,7 @@
             });
         });
     </script>
+    <script src="assets/js/design.js"></script>
 </body>
+
 </html>

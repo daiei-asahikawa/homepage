@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>大栄建築設備有限会社 - 旭川市の給排水・浄化槽工事なら | 水道局指定業者</title>
-    <meta name="description" content="北海道旭川市の大栄建築設備有限会社は、給排水衛生設備工事・浄化槽設備工事の専門業者です。旭川市水道局指定工事業者として50年以上の実績。水漏れ修理から大規模配管工事まで対応。">
-    <meta name="keywords" content="旭川市,大栄建築設備,給排水工事,浄化槽工事,水道工事,配管工事,水漏れ修理,水道局指定業者,建築設備">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' https://cdn.tailwindcss.com https://fonts.googleapis.com https://fonts.gstatic.com https://cdnjs.cloudflare.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; frame-src 'self' https://www.google.com;">
+    <title>大栄建築設備有限会社 - 旭川市の水道・設備工事・求人 | 水道局指定業者</title>
+    <meta name="description"
+        content="北海道旭川市の大栄建築設備有限会社は、給排水衛生設備工事・浄化槽設備工事の専門業者です。旭川市水道局指定工事業者として50年以上の実績。水漏れ修理から配管工事まで対応。">
+    <meta name="keywords" content="旭川市,水道,設備,求人,大栄,給排水工事,浄化槽工事,水道工事,配管工事,水漏れ修理,水道局指定業者">
     <meta name="author" content="大栄建築設備有限会社">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://uruacha.github.io/daiei/">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://uruacha.github.io/daiei/">
     <meta property="og:title" content="大栄建築設備有限会社 - 旭川市の給排水・浄化槽工事なら">
     <meta property="og:description" content="北海道旭川市の大栄建築設備有限会社は、給排水衛生設備工事・浄化槽設備工事の専門業者です。旭川市水道局指定工事業者として50年以上の実績。">
     <meta property="og:image" content="https://www.daiei-construction.com/assets/img/og-image.jpg">
-    
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://uruacha.github.io/daiei/">
     <meta property="twitter:title" content="大栄建築設備有限会社 - 旭川市の給排水・浄化槽工事なら">
     <meta property="twitter:description" content="北海道旭川市の大栄建築設備有限会社は、給排水衛生設備工事・浄化槽設備工事の専門業者です。">
     <meta property="twitter:image" content="https://www.daiei-construction.com/assets/img/og-image.jpg">
-    
+
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
@@ -46,94 +50,123 @@
         "@type": "City",
         "name": "旭川市"
       },
-      "serviceType": ["給排水衛生設備工事", "浄化槽設備工事", "水道工事"]
+      "serviceType": ["給排水衛生設備工事", "浄化槽設備工事", "水道工事"],
+      "sameAs": [
+        "https://www.instagram.com/daiei_asahikawa/" 
+      ]
     }
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Noto+Serif+JP:wght@400;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="assets/css/design.css" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         'primary-bg': '#F8FAFC',
-                        'primary-text': '#1E293B',
-                        'accent': '#0F172A',
-                        'accent-light': '#334155',
+                        'primary-text': '#334155', /* Slightly softer than pure black */
+                        'accent': '#0B1120', /* Deep Navy */
+                        'accent-light': '#1E293B',
                         'section-bg': '#F1F5F9',
-                        'water-blue': '#0EA5E9',
+                        'water-blue': '#0284C7', /* Trust Blue */
                         'light-blue': '#38BDF8',
-                        'deep-blue': '#0C4A6E',
-                        'modern-gray': '#64748B'
+                        'deep-blue': '#075985',
+                        'modern-gray': '#64748B',
+                        'gold': '#B49B66' /* Premium accent */
                     },
                     fontFamily: {
-                        'serif': ['Playfair Display', 'Noto Serif JP', 'serif'],
-                        'sans': ['Noto Sans JP', 'sans-serif']
+                        'serif': ['"Noto Serif JP"', 'serif'],
+                        'sans': ['"Noto Sans JP"', 'sans-serif'],
+                        'english': ['"Outfit"', 'sans-serif'] /* Modern English Font */
                     },
                     animation: {
-                        'float': 'float 3s ease-in-out infinite',
-                        'fade-in-up': 'fadeInUp 0.6s ease-out',
-                        'slide-in-right': 'slideInRight 0.8s ease-out'
+                        'float': 'float 6s ease-in-out infinite',
+                        'flow': 'flow 15s ease infinite',
+                        'fade-in-up': 'fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1)',
+                        'slide-in-right': 'slideInRight 0.8s cubic-bezier(0.16, 1, 0.3, 1)'
                     },
                     keyframes: {
                         float: {
                             '0%, 100%': { transform: 'translateY(0px)' },
-                            '50%': { transform: 'translateY(-10px)' }
+                            '50%': { transform: 'translateY(-15px)' }
+                        },
+                        flow: {
+                            '0%': { backgroundPosition: '0% 50%' },
+                            '50%': { backgroundPosition: '100% 50%' },
+                            '100%': { backgroundPosition: '0% 50%' }
                         },
                         fadeInUp: {
-                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '0%': { opacity: '0', transform: 'translateY(40px)' },
                             '100%': { opacity: '1', transform: 'translateY(0)' }
                         },
                         slideInRight: {
-                            '0%': { opacity: '0', transform: 'translateX(30px)' },
+                            '0%': { opacity: '0', transform: 'translateX(40px)' },
                             '100%': { opacity: '1', transform: 'translateX(0)' }
                         }
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 40px -10px rgba(0,0,0,0.08)',
+                        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.07)'
                     }
                 }
             }
         }
     </script>
     <style>
+        body {
+            letter-spacing: 0.03em;
+        }
+
         .glass-morphism {
-            backdrop-filter: blur(16px) saturate(180%);
-            -webkit-backdrop-filter: blur(16px) saturate(180%);
-            background-color: rgba(255, 255, 255, 0.75);
-            border: 1px solid rgba(255, 255, 255, 0.125);
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
         }
-        
+
         .hero-gradient {
-            background: linear-gradient(135deg, rgba(117, 96, 77, 0.9) 0%, rgba(93, 78, 55, 0.8) 50%, rgba(0, 0, 0, 0.6) 100%);
+            background: linear-gradient(135deg, rgba(11, 17, 32, 0.85) 0%, rgba(7, 89, 133, 0.75) 50%, rgba(11, 17, 32, 0.85) 100%);
+            background-size: 200% 200%;
+            animation: flow 15s ease infinite;
         }
-        
+
+        .service-card {
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
         .service-card:hover {
-            transform: translateY(-8px) scale(1.02);
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.12);
         }
-        
+
         .floating-element {
-            animation: float 3s ease-in-out infinite;
+            animation: float 6s ease-in-out infinite;
         }
-        
+
         .text-gradient {
-            background: linear-gradient(135deg, #0F172A 0%, #0EA5E9 100%);
+            background: linear-gradient(135deg, #0B1120 0%, #0284C7 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        
+
         .water-pattern {
-            background-image: 
-                radial-gradient(circle at 20% 50%, rgba(14, 165, 233, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(56, 189, 248, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 40% 80%, rgba(14, 165, 233, 0.05) 0%, transparent 50%);
+            background-color: #F8FAFC;
+            background-image:
+                radial-gradient(at 0% 0%, rgba(2, 132, 199, 0.03) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(2, 132, 199, 0.03) 0px, transparent 50%);
         }
-        
+
         .hero-slideshow {
             position: relative;
             overflow: hidden;
         }
-        
+
         .hero-slide {
             position: absolute;
             top: 0;
@@ -143,61 +176,74 @@
             background-size: cover;
             background-position: center;
             opacity: 0;
-            transition: opacity 2s ease-in-out;
+            transition: opacity 1.5s ease-in-out;
+            transform: scale(1.05);
         }
-        
+
         .hero-slide.active {
             opacity: 1;
-        }
-        
-        .parallax-bg {
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+            transform: scale(1);
+            transition: opacity 1.5s ease-in-out, transform 8s ease-out;
         }
     </style>
 </head>
+
 <body class="bg-primary-bg text-primary-text font-sans water-pattern">
     <!-- Header -->
     <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
                 <div class="text-3xl font-bold text-white font-serif tracking-wide" id="logo">
-                    <span class="text-white hover:text-water-blue transition-colors duration-300 tracking-wider">大栄建築設備</span>
+                    <span
+                        class="text-white hover:text-water-blue transition-colors duration-300 tracking-wider">大栄建築設備</span>
                     <span class="text-water-blue font-light text-xl ml-2">有限会社</span>
                 </div>
                 <ul class="hidden md:flex space-x-8 text-white font-medium" id="nav-menu">
                     <li><a href="#" class="hover:text-water-blue transition-all duration-300 relative group">
-                        ホーム
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-water-blue transition-all duration-300 group-hover:w-full"></span>
-                    </a></li>
+                            ホーム
+                            <span
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-water-blue transition-all duration-300 group-hover:w-full"></span>
+                        </a></li>
                     <li><a href="service.html" class="hover:text-water-blue transition-all duration-300 relative group">
-                        サービス
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-water-blue transition-all duration-300 group-hover:w-full"></span>
-                    </a></li>
+                            サービス
+                            <span
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-water-blue transition-all duration-300 group-hover:w-full"></span>
+                        </a></li>
                     <li><a href="recruit.html" class="hover:text-water-blue transition-all duration-300 relative group">
-                        採用情報
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-water-blue transition-all duration-300 group-hover:w-full"></span>
-                    </a></li>
+                            採用情報
+                            <span
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-water-blue transition-all duration-300 group-hover:w-full"></span>
+                        </a></li>
                     <li><a href="access.html" class="hover:text-water-blue transition-all duration-300 relative group">
-                        アクセス
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-water-blue transition-all duration-300 group-hover:w-full"></span>
-                    </a></li>
+                            アクセス
+                            <span
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-water-blue transition-all duration-300 group-hover:w-full"></span>
+                        </a></li>
                 </ul>
-                <button class="md:hidden text-white p-2 rounded-lg hover:bg-white hover:bg-opacity-20 transition-all duration-300" id="menu-toggle">
+                <button
+                    class="md:hidden text-white p-2 rounded-lg hover:bg-white hover:bg-opacity-20 transition-all duration-300"
+                    id="menu-toggle">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
                 </button>
             </div>
             <!-- Mobile menu -->
             <div class="md:hidden hidden glass-morphism rounded-xl mt-4 p-4" id="mobile-menu">
                 <ul class="flex flex-col space-y-3 text-primary-text">
-                    <li><a href="#" class="block py-2 px-4 hover:bg-accent hover:text-white rounded-lg transition-all duration-300">ホーム</a></li>
-                    <li><a href="service.html" class="block py-2 px-4 hover:bg-accent hover:text-white rounded-lg transition-all duration-300">サービス</a></li>
-                    <li><a href="recruit.html" class="block py-2 px-4 hover:bg-accent hover:text-white rounded-lg transition-all duration-300">採用情報</a></li>
-                    <li><a href="access.html" class="block py-2 px-4 hover:bg-accent hover:text-white rounded-lg transition-all duration-300">アクセス</a></li>
+                    <li><a href="#"
+                            class="block py-2 px-4 hover:bg-accent hover:text-white rounded-lg transition-all duration-300">ホーム</a>
+                    </li>
+                    <li><a href="service.html"
+                            class="block py-2 px-4 hover:bg-accent hover:text-white rounded-lg transition-all duration-300">サービス</a>
+                    </li>
+                    <li><a href="recruit.html"
+                            class="block py-2 px-4 hover:bg-accent hover:text-white rounded-lg transition-all duration-300">採用情報</a>
+                    </li>
+                    <li><a href="access.html"
+                            class="block py-2 px-4 hover:bg-accent hover:text-white rounded-lg transition-all duration-300">アクセス</a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -209,66 +255,89 @@
         <div class="hero-slide active" style="background-image: url('./assets/img/ホームの背景.jpeg');"></div>
         <div class="hero-slide" style="background-image: url('./assets/img/浄化槽工事.JPG');"></div>
         <div class="hero-slide" style="background-image: url('./assets/img/給排水工事.jpg');"></div>
-        
-        <div class="absolute inset-0 bg-gradient-to-br from-deep-blue/80 via-accent/70 to-water-blue/60"></div>
-        
-        <!-- Floating geometric shapes -->
-        <div class="absolute inset-0 overflow-hidden pointer-events-none">
-            <div class="absolute top-20 left-10 w-32 h-32 border border-white border-opacity-20 rounded-full floating-element" style="animation-delay: 0s;"></div>
-            <div class="absolute top-40 right-20 w-20 h-20 border border-water-blue border-opacity-30 rounded-full floating-element" style="animation-delay: 1s;"></div>
-            <div class="absolute bottom-32 left-20 w-24 h-24 border border-white border-opacity-10 rounded-full floating-element" style="animation-delay: 2s;"></div>
+
+        <div
+            class="absolute inset-0 bg-gradient-to-br from-accent/90 via-deep-blue/80 to-water-blue/40 mix-blend-multiply">
         </div>
-        
+
+        <!-- Floating geometric shapes -->
+        <div class="absolute top-20 left-10 w-32 h-32 bg-white opacity-10 rounded-full blur-3xl animate-float parallax-element"
+            data-speed="0.05"></div>
+        <div class="absolute bottom-20 right-10 w-48 h-48 bg-light-blue opacity-20 rounded-full blur-3xl animate-float parallax-element"
+            style="animation-delay: 2s;" data-speed="-0.05"></div>
+        <div
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full opacity-30 pointer-events-none">
+            <div class="absolute top-1/4 right-1/4 w-24 h-24 border-4 border-white opacity-20 rounded-full animate-float parallax-element"
+                style="animation-delay: 1s;" data-speed="0.08"></div>
+            <div class="absolute bottom-1/3 left-1/3 w-16 h-16 bg-gold opacity-20 rounded-full animate-float parallax-element"
+                style="animation-delay: 3s;" data-speed="-0.03"></div>
+        </div>
+
         <div class="relative z-10 text-center text-white px-6 max-w-6xl mx-auto">
             <div class="floating-element mb-8">
-                <div class="inline-block p-3 rounded-full bg-white bg-opacity-10 backdrop-blur-sm border border-white border-opacity-20 mb-6">
+                <div
+                    class="inline-block p-3 rounded-full bg-white bg-opacity-10 backdrop-blur-sm border border-white border-opacity-20 mb-6">
                     <svg class="w-8 h-8 text-water-blue" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                        <path
+                            d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
                     </svg>
                 </div>
             </div>
-            
-            <h1 class="text-5xl md:text-7xl font-serif font-bold mb-8 leading-tight">
-                <span class="block text-white opacity-95" data-aos="fade-up" data-aos-delay="200">お客様にも</span>
-                <span class="block text-water-blue text-6xl md:text-8xl" data-aos="fade-up" data-aos-delay="400">自分にも</span>
-                <span class="block text-white opacity-95" data-aos="fade-up" data-aos-delay="600">誇れる仕事を</span>
+
+            <h1 class="text-5xl md:text-7xl font-serif font-bold mb-8 leading-tight tracking-tight">
+                <span class="block text-white opacity-95 drop-shadow-lg" data-aos="fade-up"
+                    data-aos-delay="200">旭川の水道・設備</span>
+                <span
+                    class="block text-transparent bg-clip-text bg-gradient-to-r from-light-blue to-white text-7xl md:text-9xl my-4 font-english tracking-tighter"
+                    data-aos="fade-up" data-aos-delay="400">FUTURE</span>
+                <span class="block text-white opacity-95 drop-shadow-lg" data-aos="fade-up"
+                    data-aos-delay="600">を創造する</span>
             </h1>
-            
-            <div class="w-24 h-1 bg-water-blue mx-auto mb-8 rounded-full" data-aos="fade-up" data-aos-delay="800"></div>
-            
-            <p class="text-xl md:text-2xl mb-12 opacity-95 max-w-4xl mx-auto leading-relaxed font-light" data-aos="fade-up" data-aos-delay="1000">
-                北海道旭川市で50年以上の実績を誇る大栄建築設備。<br class="hidden md:block">
-                給排水設備から浄化槽まで、地域の水回りを支える信頼のパートナーとして、<br class="hidden md:block">
-                お客様の暮らしに<span class="text-water-blue font-medium">安心と快適</span>をお届けします。
+
+            <div class="w-24 h-1 bg-gradient-to-r from-water-blue to-light-blue mx-auto mb-8 rounded-full shadow-[0_0_15px_rgba(56,189,248,0.5)]"
+                data-aos="fade-up" data-aos-delay="800"></div>
+
+            <p class="text-xl md:text-2xl mb-12 opacity-90 max-w-2xl mx-auto leading-relaxed font-light tracking-wide"
+                data-aos="fade-up" data-aos-delay="1000">
+                旭川市水道局指定工事業者として50年。<br class="hidden md:block">
+                確かな技術と信頼で、地域のライフラインを守り続けます。
             </p>
-            
-            <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="1200">
-                <a href="recruit.html" class="group relative inline-flex items-center justify-center px-8 py-4 bg-water-blue text-white font-bold text-lg rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
-                    <span class="relative z-10 flex items-center">
-                        採用情報を見る
-                        <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+
+            <div class="flex flex-col sm:flex-row gap-6 justify-center" data-aos="fade-up" data-aos-delay="1200">
+                <a href="service.html"
+                    class="group relative inline-flex items-center justify-center px-8 py-4 bg-water-blue text-white font-bold text-lg rounded-full shadow-lg hover:shadow-[0_0_20px_rgba(14,165,233,0.6)] transform hover:scale-105 transition-all duration-300 overflow-hidden">
+                    <span
+                        class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></span>
+                    <span class="relative z-10 flex items-center font-english tracking-wider">
+                        SERVICE
+                        <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                         </svg>
                     </span>
-                    <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 rounded-xl transition-opacity duration-300"></div>
                 </a>
-                
-                <a href="service.html" class="group inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-medium text-lg rounded-xl hover:bg-white hover:text-deep-brown transition-all duration-300">
-                    <span class="flex items-center">
-                        サービス詳細
-                        <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+
+                <a href="recruit.html"
+                    class="group inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-bold text-lg rounded-full hover:bg-white hover:text-deep-blue hover:shadow-[0_0_20px_rgba(255,255,255,0.4)] transition-all duration-300">
+                    <span class="flex items-center font-english tracking-wider">
+                        RECRUIT
+                        <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                            </path>
                         </svg>
                     </span>
                 </a>
             </div>
         </div>
-        
+
         <!-- Scroll indicator -->
-        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-            </svg>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white flex flex-col items-center gap-2 opacity-80 hover:opacity-100 transition-opacity cursor-pointer"
+            onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+            <span class="text-xs font-english tracking-[0.2em] animate-pulse">SCROLL</span>
+            <div class="w-[1px] h-12 bg-gradient-to-b from-white to-transparent"></div>
         </div>
     </section>
 
@@ -277,16 +346,17 @@
         <div class="container mx-auto max-w-6xl">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">私たちについて</h2>
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">大栄建築設備について</h2>
                     <p class="text-lg mb-6 leading-relaxed">
                         大栄建築設備有限会社は、北海道旭川市に根ざした建築設備のプロフェッショナル集団です。給排水設備工事、浄化槽設備工事を中心に、お客様の快適な生活環境作りをサポートしています。
                     </p>
                     <p class="text-lg leading-relaxed">
-                        旭川市水道局指定工事業者として、確かな技術力と豊富な経験を持つスタッフが、責任を持って工事を行います。小さな修理から大規模な設備工事まで、どんなご要望にもお応えします。
+                        旭川市水道局指定工事業者として、確かな技術力と豊富な経験を持つスタッフが、責任を持って工事を行います。小さな修理から設備工事まで、どんなご要望にもお応えします。
                     </p>
                 </div>
                 <div class="relative">
-                    <img src="./assets/img/給排水工事.jpg" alt="配管作業の様子" class="w-full h-96 object-cover rounded-lg shadow-lg">
+                    <img src="./assets/img/給排水工事.jpg" alt="配管作業の様子"
+                        class="w-full h-96 object-cover rounded-lg shadow-lg">
                 </div>
             </div>
         </div>
@@ -302,7 +372,7 @@
             <p class="text-lg leading-relaxed mb-12 max-w-3xl mx-auto">
                 私たちは「お客様にも自分にも誇れる仕事」を礎として、誠実さ、信頼性、成長、品質を大切に、常にお客様の立場に立ったサービスを提供し続けます。一つひとつの工事に責任を持ち、地域社会に貢献できる企業であり続けることを目指しています。
             </p>
-            
+
             <!-- Value Icons -->
             <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
                 <div class="text-center">
@@ -348,66 +418,85 @@
             <div class="absolute top-20 left-20 w-64 h-64 border-2 border-accent rounded-full"></div>
             <div class="absolute bottom-20 right-20 w-48 h-48 border border-water-blue rounded-full"></div>
         </div>
-        
+
         <div class="container mx-auto max-w-7xl relative z-10">
             <div class="text-center mb-16" data-aos="fade-up">
-                <div class="inline-block p-3 rounded-full bg-water-blue bg-opacity-10 backdrop-blur-sm border border-water-blue border-opacity-20 mb-6">
+                <div
+                    class="inline-block p-3 rounded-full bg-water-blue bg-opacity-10 backdrop-blur-sm border border-water-blue border-opacity-20 mb-6">
                     <svg class="w-8 h-8 text-water-blue" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                 </div>
-                <h2 class="text-4xl md:text-5xl font-serif font-bold text-gradient mb-6">私たちのサービス</h2>
-                <div class="w-24 h-1 bg-water-blue mx-auto rounded-full mb-6"></div>
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-accent mb-6">私たちのサービス</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-water-blue to-light-blue mx-auto rounded-full mb-6"></div>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                     確かな技術力と豊富な経験で、お客様の水回りのあらゆるニーズにお応えします
                 </p>
             </div>
-            
+
             <div class="grid md:grid-cols-3 gap-8 mb-16">
                 <!-- Service 1 -->
-                <div class="service-card group bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card group bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500"
+                    data-aos="fade-up" data-aos-delay="200">
                     <div class="relative overflow-hidden">
-                        <img src="./assets/img/給排水工事.jpg" alt="掘削・配管工事" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-accent bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+                        <img src="./assets/img/給排水工事.jpg" alt="掘削・配管工事"
+                            class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-accent bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300">
+                        </div>
                         <div class="absolute top-4 left-4">
-                            <div class="bg-water-blue text-white px-3 py-1 rounded-full text-sm font-medium">SERVICE 01</div>
+                            <div class="bg-water-blue text-white px-3 py-1 rounded-full text-sm font-medium">SERVICE 01
+                            </div>
                         </div>
                     </div>
                     <div class="p-8">
                         <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 bg-accent bg-opacity-10 rounded-xl flex items-center justify-center mr-4">
+                            <div
+                                class="w-12 h-12 bg-accent bg-opacity-10 rounded-xl flex items-center justify-center mr-4">
                                 <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                                    <path
+                                        d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
                                 </svg>
                             </div>
                             <h3 class="text-xl font-bold text-primary-text">給排水衛生設備工事</h3>
                         </div>
                         <p class="text-gray-600 leading-relaxed mb-6">
-                            住宅やビルの給排水設備の設計・施工・メンテナンスを行います。水漏れ修理から大規模な配管工事まで対応。
+                            住宅やビルの給排水設備の設計・施工・メンテナンスを行います。水漏れ修理から配管工事まで対応。
                         </p>
-                        <div class="flex items-center text-accent font-medium group-hover:text-water-blue transition-colors duration-300">
+                        <div
+                            class="flex items-center text-accent font-medium group-hover:text-water-blue transition-colors duration-300">
                             詳しく見る
-                            <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                             </svg>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Service 2 -->
-                <div class="service-card group bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-card group bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500"
+                    data-aos="fade-up" data-aos-delay="400">
                     <div class="relative overflow-hidden">
-                        <img src="./assets/img/浄化槽工事.JPG" alt="浄化槽設置工事" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-accent bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+                        <img src="./assets/img/浄化槽工事.JPG" alt="浄化槽設置工事"
+                            class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-accent bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300">
+                        </div>
                         <div class="absolute top-4 left-4">
-                            <div class="bg-water-blue text-white px-3 py-1 rounded-full text-sm font-medium">SERVICE 02</div>
+                            <div class="bg-water-blue text-white px-3 py-1 rounded-full text-sm font-medium">SERVICE 02
+                            </div>
                         </div>
                     </div>
                     <div class="p-8">
                         <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 bg-accent bg-opacity-10 rounded-xl flex items-center justify-center mr-4">
+                            <div
+                                class="w-12 h-12 bg-accent bg-opacity-10 rounded-xl flex items-center justify-center mr-4">
                                 <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v11a3 3 0 106 0V4a2 2 0 00-2-2H4zm1 14a1 1 0 100-2 1 1 0 000 2zm5-1.757l4.9-4.9a2 2 0 000-2.828L13.485 5.1a2 2 0 00-2.828 0L10 5.757v8.486zM16 18H9.071l6-6H16a2 2 0 012 2v2a2 2 0 01-2 2z" clip-rule="evenodd"/>
+                                    <path fill-rule="evenodd"
+                                        d="M4 2a2 2 0 00-2 2v11a3 3 0 106 0V4a2 2 0 00-2-2H4zm1 14a1 1 0 100-2 1 1 0 000 2zm5-1.757l4.9-4.9a2 2 0 000-2.828L13.485 5.1a2 2 0 00-2.828 0L10 5.757v8.486zM16 18H9.071l6-6H16a2 2 0 012 2v2a2 2 0 01-2 2z"
+                                        clip-rule="evenodd" />
                                 </svg>
                             </div>
                             <h3 class="text-xl font-bold text-primary-text">浄化槽設備工事</h3>
@@ -415,39 +504,50 @@
                         <p class="text-gray-600 leading-relaxed mb-6">
                             浄化槽の新設・修理・点検を専門技術者が実施。環境に配慮した適切な排水処理をサポートします。
                         </p>
-                        <div class="flex items-center text-accent font-medium group-hover:text-water-blue transition-colors duration-300">
+                        <div
+                            class="flex items-center text-accent font-medium group-hover:text-water-blue transition-colors duration-300">
                             詳しく見る
-                            <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                             </svg>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Service 3 -->
-                <div class="service-card group bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500" data-aos="fade-up" data-aos-delay="600">
-                    <div class="relative overflow-hidden bg-gradient-to-br from-water-blue to-deep-blue h-56 flex items-center justify-center">
+                <div class="service-card group bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500"
+                    data-aos="fade-up" data-aos-delay="600">
+                    <div
+                        class="relative overflow-hidden bg-gradient-to-br from-water-blue to-deep-blue h-56 flex items-center justify-center">
                         <div class="text-center p-8 transform group-hover:scale-105 transition-transform duration-500">
                             <div class="bg-white rounded-2xl p-6 shadow-2xl max-w-sm mx-auto">
                                 <div class="text-water-blue font-bold text-2xl mb-2">旭川市</div>
                                 <div class="text-accent font-bold text-3xl mb-2">水道局指定業者</div>
                                 <div class="flex items-center justify-center mt-4">
                                     <svg class="w-6 h-6 text-water-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
                                     </svg>
                                     <span class="text-sm font-medium text-gray-600">認定業者</span>
                                 </div>
                             </div>
                         </div>
                         <div class="absolute top-4 left-4">
-                            <div class="bg-white text-water-blue px-3 py-1 rounded-full text-sm font-medium shadow-lg">SERVICE 03</div>
+                            <div class="bg-white text-water-blue px-3 py-1 rounded-full text-sm font-medium shadow-lg">
+                                SERVICE 03</div>
                         </div>
                     </div>
                     <div class="p-8">
                         <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 bg-accent bg-opacity-10 rounded-xl flex items-center justify-center mr-4">
+                            <div
+                                class="w-12 h-12 bg-accent bg-opacity-10 rounded-xl flex items-center justify-center mr-4">
                                 <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.293l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l1.293 1.293a1 1 0 001.414-1.414z" clip-rule="evenodd"/>
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.293l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l1.293 1.293a1 1 0 001.414-1.414z"
+                                        clip-rule="evenodd" />
                                 </svg>
                             </div>
                             <h3 class="text-xl font-bold text-primary-text">旭川市水道局指定業者</h3>
@@ -455,22 +555,28 @@
                         <p class="text-gray-600 leading-relaxed mb-6">
                             旭川市水道局指定工事業者として、確かな技術力と信頼の実績で、お客様に安心・安全な水道工事を提供します。
                         </p>
-                        <div class="flex items-center text-accent font-medium group-hover:text-water-blue transition-colors duration-300">
+                        <div
+                            class="flex items-center text-accent font-medium group-hover:text-water-blue transition-colors duration-300">
                             詳しく見る
-                            <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                             </svg>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
             <div class="text-center" data-aos="fade-up" data-aos-delay="800">
-                <a href="service.html" class="group inline-flex items-center px-10 py-4 bg-gradient-to-r from-accent to-deep-brown text-white font-bold text-lg rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                <a href="service.html"
+                    class="group inline-flex items-center px-10 py-4 bg-gradient-to-r from-accent to-deep-brown text-white font-bold text-lg rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
                     <span class="flex items-center">
                         すべてのサービスを見る
-                        <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                         </svg>
                     </span>
                 </a>
@@ -479,14 +585,16 @@
     </section>
 
     <!-- Recruit Teaser Section -->
-    <section class="relative py-20 px-4 bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');">
+    <section class="relative py-20 px-4 bg-cover bg-center bg-no-repeat"
+        style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');">
         <div class="absolute inset-0 bg-gradient-to-r from-water-blue/80 to-deep-blue/80"></div>
         <div class="relative z-10 container mx-auto max-w-4xl text-center text-white">
-            <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">仲間を募集しています</h2>
+            <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">旭川で求人募集中</h2>
             <p class="text-lg mb-8 max-w-2xl mx-auto">
-                未経験から始められる配管工スタッフを募集中。充実した研修制度と働きやすい環境で、一緒に成長していきませんか？
+                未経験から始められる配管工スタッフを募集中。働きやすい環境で、一緒に成長していきませんか？
             </p>
-            <a href="recruit.html" class="inline-block bg-white text-accent px-8 py-4 rounded-lg font-medium text-lg hover:bg-opacity-90 transition-all">
+            <a href="recruit.html"
+                class="inline-block bg-white text-accent px-8 py-4 rounded-lg font-medium text-lg hover:bg-opacity-90 transition-all">
                 採用情報を見る
             </a>
         </div>
@@ -496,9 +604,11 @@
     <section class="py-20 px-6 bg-section-bg">
         <div class="container mx-auto max-w-7xl">
             <div class="text-center mb-16" data-aos="fade-up">
-                <div class="inline-block p-3 rounded-full bg-water-blue bg-opacity-10 backdrop-blur-sm border border-water-blue border-opacity-20 mb-6">
+                <div
+                    class="inline-block p-3 rounded-full bg-water-blue bg-opacity-10 backdrop-blur-sm border border-water-blue border-opacity-20 mb-6">
                     <svg class="w-8 h-8 text-water-blue" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"/>
+                        <path
+                            d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" />
                     </svg>
                 </div>
                 <h2 class="text-4xl md:text-5xl font-serif font-bold text-gradient mb-6">施工実績</h2>
@@ -507,7 +617,7 @@
                     Coming Soon
                 </p>
             </div>
-            
+
             <div class="text-center py-20" data-aos="fade-up" data-aos-delay="200">
                 <div class="text-8xl mb-8 opacity-20">🚧</div>
                 <p class="text-2xl text-gray-500 font-light">施工実績ページを準備中です</p>
@@ -522,18 +632,16 @@
             <div class="grid md:grid-cols-2 gap-8 items-center">
                 <div>
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1441.19158206939!2d142.3663375920678!3d43.74413941921457!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0ce629e55d1f49%3A0x80a511cf066f11fc!2z44CSMDc4LTgzMTgg5YyX5rW36YGT5pet5bed5biC56We5qW95bKh77yY5p2h77yT5LiB55uu77yS4oiS77yS77yT!5e0!3m2!1sja!2sjp!4v1758608036735!5m2!1sja!2sjp"
-                        class="w-full h-64 border-0 rounded-lg"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d720.5907529026648!2d142.36636843755227!3d43.74455796542654!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0ce629e55d1f49%3A0x80a511cf066f11fc!2z44CSMDc4LTgzMTgg5YyX5rW36YGT5pet5bed5biC56We5qW95bKh77yY5p2h77yT5LiB55uu77yS4oiS77yS77yT!5e0!3m2!1sja!2sjp!4v1763963433785!5m2!1sja!2sjp"
+                        width="100%" height="256" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" class="w-full h-64 border-0 rounded-lg"></iframe>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4">会社所在地</h3>
                     <p class="text-lg mb-2">北海道旭川市神楽岡8条3丁目2番22号</p>
                     <p class="text-gray-600 mb-6">JR神楽岡駅から車で5分</p>
-                    <a href="access.html" class="inline-block bg-accent text-white px-6 py-3 rounded-lg font-medium hover:bg-opacity-90 transition-all">
+                    <a href="access.html"
+                        class="inline-block bg-accent text-white px-6 py-3 rounded-lg font-medium hover:bg-opacity-90 transition-all">
                         詳細を見る
                     </a>
                 </div>
@@ -542,7 +650,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-primary-text text-white py-12 px-4">
+    <footer class="bg-accent text-white py-16 px-4 border-t border-white/10">
         <div class="container mx-auto max-w-6xl">
             <div class="grid md:grid-cols-3 gap-8">
                 <div>
@@ -565,6 +673,8 @@
             </div>
             <div class="border-t border-gray-600 mt-8 pt-8 text-center text-gray-400">
                 <p>&copy; 2024 大栄建築設備有限会社. All rights reserved.</p>
+                <a href="privacy.html"
+                    class="text-sm hover:text-white transition-colors mt-2 inline-block">プライバシーポリシー</a>
             </div>
         </div>
     </footer>
@@ -580,11 +690,11 @@
         });
 
         // Header scroll effect with enhanced animations
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             const header = document.getElementById('header');
             const logo = document.getElementById('logo');
             const navMenu = document.getElementById('nav-menu');
-            
+
             if (window.scrollY > 50) {
                 header.classList.add('glass-morphism', 'shadow-lg');
                 header.classList.remove('bg-transparent');
@@ -609,7 +719,7 @@
         });
 
         // Mobile menu toggle with animation
-        document.getElementById('menu-toggle').addEventListener('click', function() {
+        document.getElementById('menu-toggle').addEventListener('click', function () {
             const mobileMenu = document.getElementById('mobile-menu');
             mobileMenu.classList.toggle('hidden');
         });
@@ -632,22 +742,24 @@
         function initHeroSlideshow() {
             const slides = document.querySelectorAll('.hero-slide');
             let currentSlide = 0;
-            
+
             function nextSlide() {
                 slides[currentSlide].classList.remove('active');
                 currentSlide = (currentSlide + 1) % slides.length;
                 slides[currentSlide].classList.add('active');
             }
-            
+
             // Change slide every 8 seconds
             setInterval(nextSlide, 8000);
         }
 
         // Add loading animation
-        window.addEventListener('load', function() {
+        window.addEventListener('load', function () {
             document.body.classList.add('loaded');
             initHeroSlideshow();
         });
     </script>
+    <script src="assets/js/design.js"></script>
 </body>
+
 </html>

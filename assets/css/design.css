@@ -1,0 +1,82 @@
+/* Custom Cursor */
+@media (pointer: fine) {
+    body {
+        cursor: none;
+    }
+
+    .cursor-dot,
+    .cursor-outline {
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        z-index: 9999;
+        pointer-events: none;
+    }
+
+    .cursor-dot {
+        width: 8px;
+        height: 8px;
+        background-color: #0284C7; /* water-blue */
+        transition: width 0.2s, height 0.2s, background-color 0.2s;
+    }
+
+    .cursor-outline {
+        width: 40px;
+        height: 40px;
+        border: 1px solid rgba(2, 132, 199, 0.5);
+        transition: width 0.2s, height 0.2s, background-color 0.2s, transform 0.1s;
+    }
+
+    /* Hover States */
+    body.hovering .cursor-dot {
+        width: 12px;
+        height: 12px;
+        background-color: #38BDF8; /* light-blue */
+    }
+
+    body.hovering .cursor-outline {
+        width: 60px;
+        height: 60px;
+        border-color: rgba(56, 189, 248, 0.8);
+        background-color: rgba(56, 189, 248, 0.1);
+    }
+}
+
+/* Parallax Utilities */
+.parallax-bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-element {
+    transition: transform 0.1s cubic-bezier(0,0,0.2,1);
+    will-change: transform;
+}
+
+/* Asymmetric Layout Tweaks */
+.asymmetric-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+}
+
+.asymmetric-left {
+    grid-column: 1 / 8;
+}
+
+.asymmetric-right {
+    grid-column: 6 / 13;
+    margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+    .asymmetric-left,
+    .asymmetric-right {
+        grid-column: 1 / -1;
+        margin-top: 0;
+    }
+}
