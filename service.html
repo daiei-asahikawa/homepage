@@ -570,6 +570,7 @@
             const header = document.getElementById('header');
             const logo = document.getElementById('logo');
             const navMenu = document.getElementById('nav-menu');
+            const menuToggle = document.getElementById('menu-toggle');
 
             if (window.scrollY > 50) {
                 header.classList.add('glass-morphism', 'shadow-lg');
@@ -581,6 +582,10 @@
                 logo.querySelector('span:first-child').classList.add('text-primary-text');
                 logo.querySelector('span:last-child').classList.remove('text-water-blue');
                 logo.querySelector('span:last-child').classList.add('text-accent');
+
+                // ハンバーガーメニューの色も変更
+                menuToggle.classList.remove('text-white');
+                menuToggle.classList.add('text-primary-text');
             } else {
                 header.classList.remove('glass-morphism', 'shadow-lg');
                 header.classList.add('bg-transparent');
@@ -591,6 +596,10 @@
                 logo.querySelector('span:first-child').classList.remove('text-primary-text');
                 logo.querySelector('span:last-child').classList.add('text-water-blue');
                 logo.querySelector('span:last-child').classList.remove('text-accent');
+
+                // ハンバーガーメニューの色を元に戻す
+                menuToggle.classList.add('text-white');
+                menuToggle.classList.remove('text-primary-text');
             }
         });
 
