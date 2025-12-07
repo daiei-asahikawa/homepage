@@ -16,31 +16,37 @@
     }
 
     .cursor-dot {
-        width: 8px;
-        height: 8px;
-        background-color: #0284C7; /* water-blue */
+        width: 10px;
+        height: 10px;
+        background-color: #0284C7;
+        /* water-blue */
+        border: 2px solid #ffffff;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
         transition: width 0.2s, height 0.2s, background-color 0.2s;
     }
 
     .cursor-outline {
         width: 40px;
         height: 40px;
-        border: 1px solid rgba(2, 132, 199, 0.5);
+        border: 2px solid rgba(2, 132, 199, 0.8);
+        background-color: rgba(255, 255, 255, 0.1);
         transition: width 0.2s, height 0.2s, background-color 0.2s, transform 0.1s;
     }
 
     /* Hover States */
     body.hovering .cursor-dot {
-        width: 12px;
-        height: 12px;
-        background-color: #38BDF8; /* light-blue */
+        width: 14px;
+        height: 14px;
+        background-color: #38BDF8;
+        /* light-blue */
+        border-color: #ffffff;
     }
 
     body.hovering .cursor-outline {
         width: 60px;
         height: 60px;
-        border-color: rgba(56, 189, 248, 0.8);
-        background-color: rgba(56, 189, 248, 0.1);
+        border-color: rgba(56, 189, 248, 1);
+        background-color: rgba(56, 189, 248, 0.2);
     }
 }
 
@@ -53,7 +59,7 @@
 }
 
 .parallax-element {
-    transition: transform 0.1s cubic-bezier(0,0,0.2,1);
+    transition: transform 0.1s cubic-bezier(0, 0, 0.2, 1);
     will-change: transform;
 }
 
@@ -74,6 +80,7 @@
 }
 
 @media (max-width: 768px) {
+
     .asymmetric-left,
     .asymmetric-right {
         grid-column: 1 / -1;
