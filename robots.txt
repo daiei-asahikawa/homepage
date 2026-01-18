@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://uruacha.github.io/daiei/sitemap.xml
+Sitemap: https://daiei-asahikawa.github.io/homepage/sitemap.xml
