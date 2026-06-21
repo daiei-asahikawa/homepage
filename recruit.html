@@ -260,14 +260,15 @@
             </p>
 
             <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="1200">
-                <a href="tel:0166-65-6624"
+                <a href="#apply"
                     class="group relative inline-flex items-center justify-center px-8 py-4 bg-water-blue text-white font-bold text-lg rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
                     <span class="relative z-10 flex items-center">
-                        電話で問い合わせ
+                        メールで応募・問い合わせ
                         <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300"
-                            fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 8l7.89 7.89a1 1 0 001.42 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                            </path>
                         </svg>
                     </span>
                     <div
@@ -583,7 +584,7 @@
 
 
     <!-- Application Section -->
-    <section class="py-20 px-6 bg-section-bg relative overflow-hidden">
+    <section id="apply" class="py-20 px-6 bg-section-bg relative overflow-hidden">
         <!-- Background decoration -->
         <div class="absolute inset-0 opacity-5">
             <div class="absolute top-20 right-20 w-48 h-48 border border-water-blue rounded-full"></div>
@@ -600,24 +601,14 @@
                 <h2 class="text-4xl md:text-5xl font-serif font-bold text-accent mb-6">応募方法</h2>
                 <div class="w-24 h-1 bg-gradient-to-r from-water-blue to-light-blue mx-auto rounded-full mb-6"></div>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                    お気軽にお電話またはメールでご連絡ください
+                    お気軽にメールにてご連絡ください
                 </p>
             </div>
 
-            <div class="bg-white rounded-2xl shadow-xl ring-1 ring-gray-200 p-8 md:p-12 hover:shadow-2xl transition-all duration-300"
+            <div class="bg-white rounded-2xl shadow-xl ring-1 ring-gray-200 p-8 md:p-12 hover:shadow-2xl transition-all duration-300 max-w-2xl mx-auto"
                 data-aos="fade-up" data-aos-delay="200">
-                <div class="grid md:grid-cols-2 gap-12">
-                    <div class="text-center group">
-                        <div
-                            class="w-20 h-20 bg-water-blue bg-opacity-10 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:bg-opacity-20 transition-all duration-300">
-                            <div class="text-water-blue text-4xl">📞</div>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-6 text-primary-text">お電話での問い合わせ</h3>
-                        <p class="text-3xl font-bold text-water-blue mb-4">0166-65-6624</p>
-                        <p class="text-gray-600">平日 8:00〜17:00</p>
-                    </div>
-
-                    <div class="flex flex-col justify-center space-y-4">
+                <div class="space-y-8">
+                    <div class="flex flex-col space-y-4 max-w-md mx-auto">
                         <!-- Strict Application Button -->
                         <div class="relative group cursor-pointer" onclick="openStrictMail()">
                             <div
@@ -665,7 +656,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="text-center mt-6">
+
+                    <div class="text-center border-t border-gray-100 pt-6">
                         <p class="text-gray-500 mb-1">上記ボタンが起動しない場合：</p>
                         <p class="text-xl font-bold text-water-blue select-all">d-saiyo@daiei1977.com</p>
                     </div>
@@ -796,13 +788,13 @@
     <div class="fixed bottom-0 left-0 right-0 bg-white border-t shadow-lg z-40">
         <div class="container mx-auto px-4 py-3">
             <div class="flex flex-col sm:flex-row gap-3 sm:justify-center">
-                <a href="tel:0166-65-6624"
+                <a href="#apply"
                     class="flex items-center justify-center bg-accent text-white px-6 py-3 rounded-lg font-medium hover:bg-opacity-90 transition-all">
-                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                        <path
-                            d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 8l7.89 7.89a1 1 0 001.42 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
-                    電話で応募
+                    メールで応募
                 </a>
                 <a href="index.html"
                     class="flex items-center justify-center border-2 border-accent text-accent px-6 py-3 rounded-lg font-medium hover:bg-accent hover:text-white transition-all">
