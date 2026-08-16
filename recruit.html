@@ -90,7 +90,9 @@
                         'light-blue': '#38BDF8',
                         'deep-blue': '#075985',
                         'modern-gray': '#64748B',
-                        'gold': '#B49B66' /* Premium accent */
+                        'gold': '#B49B66', /* Premium accent */
+                        'line-green': '#06C755', /* LINE brand */
+                        'line-green-dark': '#05A648'
                     },
                     fontFamily: {
                         'serif': ['"Noto Serif JP"', 'serif'],
@@ -270,20 +272,15 @@
             </p>
 
             <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="1200">
-                <a href="#apply"
-                    class="group relative inline-flex items-center justify-center px-8 py-4 bg-water-blue text-white font-bold text-lg rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                <a href="https://lin.ee/TBH2y6U" target="_blank" rel="noopener"
+                    class="group relative inline-flex items-center justify-center px-8 py-4 bg-line-green text-white font-bold text-lg rounded-xl shadow-lg hover:shadow-2xl hover:bg-line-green-dark transform hover:scale-105 transition-all duration-300">
                     <span class="relative z-10 flex items-center">
-                        メールで応募・問い合わせ
-                        <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300"
-                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M3 8l7.89 7.89a1 1 0 001.42 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
-                            </path>
+                        <svg class="w-6 h-6 mr-2.5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M12 2C6.48 2 2 5.64 2 10.12c0 4.02 3.56 7.38 8.37 8.02.33.07.77.22.88.5.1.26.07.66.03.92l-.14.85c-.04.25-.2.99.87.54 1.07-.45 5.77-3.4 7.87-5.82C21.33 13.54 22 11.93 22 10.12 22 5.64 17.52 2 12 2z" />
                         </svg>
+                        LINEで応募する
                     </span>
-                    <div
-                        class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 rounded-xl transition-opacity duration-300">
-                    </div>
                 </a>
 
                 <a href="#requirements"
@@ -298,6 +295,11 @@
                     </span>
                 </a>
             </div>
+
+            <p class="mt-6 text-sm text-white/80" data-aos="fade-up" data-aos-delay="1400">
+                LINEを使っていない方は、<a href="#apply"
+                    class="underline underline-offset-4 hover:text-white transition-colors">メールでの応募</a>もできます
+            </p>
         </div>
 
         <!-- Scroll indicator -->
@@ -612,7 +614,8 @@
                 <h2 class="text-4xl md:text-5xl font-serif font-bold text-accent mb-6">応募方法</h2>
                 <div class="w-24 h-1 bg-gradient-to-r from-water-blue to-light-blue mx-auto rounded-full mb-6"></div>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                    お気軽にメールにてご連絡ください
+                    LINEなら、友だち追加してひとこと送るだけ。<br class="hidden md:block">
+                    履歴書はあとからで大丈夫です。
                 </p>
             </div>
 
@@ -620,6 +623,45 @@
                 data-aos="fade-up" data-aos-delay="200">
                 <div class="space-y-8">
                     <div class="flex flex-col space-y-4 max-w-md mx-auto">
+                        <!-- LINE Application Button (Primary) -->
+                        <a href="https://lin.ee/TBH2y6U" target="_blank" rel="noopener"
+                            class="relative group block">
+                            <span
+                                class="absolute -top-3 left-5 z-20 inline-block px-3 py-1 rounded-full bg-gold text-white text-xs font-bold tracking-wide shadow">
+                                いちばん早い
+                            </span>
+                            <div
+                                class="absolute -inset-1 bg-line-green rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-500">
+                            </div>
+                            <div
+                                class="relative flex items-center justify-between bg-line-green text-white p-6 rounded-2xl shadow-lg group-hover:bg-line-green-dark transition-all duration-300">
+                                <div class="flex-1">
+                                    <div class="flex items-center mb-1">
+                                        <svg class="w-7 h-7 mr-2" fill="currentColor" viewBox="0 0 24 24"
+                                            aria-hidden="true">
+                                            <path
+                                                d="M12 2C6.48 2 2 5.64 2 10.12c0 4.02 3.56 7.38 8.37 8.02.33.07.77.22.88.5.1.26.07.66.03.92l-.14.85c-.04.25-.2.99.87.54 1.07-.45 5.77-3.4 7.87-5.82C21.33 13.54 22 11.93 22 10.12 22 5.64 17.52 2 12 2z" />
+                                        </svg>
+                                        <h3 class="text-2xl font-bold">LINEで応募</h3>
+                                    </div>
+                                    <p class="text-sm text-white/90 font-medium">友だち追加して、ひとこと送るだけ</p>
+                                </div>
+                                <div
+                                    class="bg-white/20 p-3 rounded-full group-hover:scale-110 transition-transform duration-300">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="flex items-center gap-3 pt-2">
+                            <div class="flex-1 h-px bg-gray-200"></div>
+                            <span class="text-xs text-gray-400 font-medium">メールで応募したい方はこちら</span>
+                            <div class="flex-1 h-px bg-gray-200"></div>
+                        </div>
+
                         <!-- Strict Application Button -->
                         <div class="relative group cursor-pointer" onclick="openStrictMail()">
                             <div
@@ -669,7 +711,7 @@
                     </div>
 
                     <div class="text-center border-t border-gray-100 pt-6">
-                        <p class="text-gray-500 mb-1">上記ボタンが起動しない場合：</p>
+                        <p class="text-gray-500 mb-1">メールソフトが開かない場合は、こちらへ直接どうぞ：</p>
                         <p class="text-xl font-bold text-water-blue select-all">d-saiyo@daiei1977.com</p>
                     </div>
                 </div>
@@ -702,10 +744,11 @@
                     <div
                         class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 bg-white rounded-xl shadow-md border hover:border-water-blue transition-all duration-300">
                         <div class="flex items-center mb-2">
-                            <h3 class="font-bold text-lg text-primary-text">応募・履歴書の送付</h3>
+                            <h3 class="font-bold text-lg text-primary-text">応募のご連絡</h3>
                         </div>
                         <p class="text-gray-600 text-sm leading-relaxed">
-                            「ガチ応募」ボタンからメールをお送りいただき、履歴書（PDFまたは画像データ）を添付してください。
+                            <strong class="text-line-green">LINEの場合：</strong>友だち追加して、そのままメッセージを送ってください。履歴書は写真を撮って送っていただくだけで結構です（あとからでも構いません）。<br>
+                            <strong class="text-water-blue">メールの場合：</strong>「ガチ応募」ボタンからメールをお送りいただき、履歴書（PDFまたは画像データ）を添付してください。
                         </p>
                     </div>
                 </div>
@@ -723,7 +766,7 @@
                         </div>
                         <p class="text-gray-600 text-sm leading-relaxed">
                             いただいた履歴書をもとに書類選考を行います。<br>
-                            書類選考の結果は、合否にかかわらずメールまたはお電話にてご連絡いたします。
+                            書類選考の結果は、合否にかかわらずご応募いただいた方法（LINE・メール）またはお電話にてご連絡いたします。
                         </p>
                     </div>
                 </div>
@@ -758,7 +801,7 @@
                             <h3 class="font-bold text-lg text-primary-text">合否のご連絡</h3>
                         </div>
                         <p class="text-gray-600 text-sm leading-relaxed">
-                            面接後、合否にかかわらずメールまたはお電話にてご連絡いたします。
+                            面接後、合否にかかわらずご応募いただいた方法（LINE・メール）またはお電話にてご連絡いたします。
                         </p>
                     </div>
                 </div>
@@ -795,12 +838,20 @@
         </div>
     </section>
 
-    <!-- Fixed CTA Bar -->
-    <div class="fixed bottom-0 left-0 right-0 bg-white border-t shadow-lg z-40">
+    <!-- Fixed CTA Bar (PC only / スマホは mobile-apply-bar が担当) -->
+    <div class="hidden md:block fixed bottom-0 left-0 right-0 bg-white border-t shadow-lg z-40">
         <div class="container mx-auto px-4 py-3">
             <div class="flex flex-col sm:flex-row gap-3 sm:justify-center">
+                <a href="https://lin.ee/TBH2y6U" target="_blank" rel="noopener"
+                    class="flex items-center justify-center bg-line-green text-white px-6 py-3 rounded-lg font-medium hover:bg-line-green-dark transition-all">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M12 2C6.48 2 2 5.64 2 10.12c0 4.02 3.56 7.38 8.37 8.02.33.07.77.22.88.5.1.26.07.66.03.92l-.14.85c-.04.25-.2.99.87.54 1.07-.45 5.77-3.4 7.87-5.82C21.33 13.54 22 11.93 22 10.12 22 5.64 17.52 2 12 2z" />
+                    </svg>
+                    LINEで応募
+                </a>
                 <a href="#apply"
-                    class="flex items-center justify-center bg-accent text-white px-6 py-3 rounded-lg font-medium hover:bg-opacity-90 transition-all">
+                    class="flex items-center justify-center border-2 border-accent text-accent px-6 py-3 rounded-lg font-medium hover:bg-accent hover:text-white transition-all">
                     <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M3 8l7.89 7.89a1 1 0 001.42 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -958,13 +1009,17 @@
         style="padding-bottom: calc(0.75rem + env(safe-area-inset-bottom));">
         <div class="flex gap-2">
             <button onclick="openCasualMail()"
-                class="flex-1 min-h-[52px] rounded-full border-2 border-water-blue text-water-blue font-bold text-[15px] active:bg-water-blue/10 transition-colors">
+                class="w-[38%] min-h-[52px] rounded-full border-2 border-water-blue text-water-blue font-bold text-[14px] active:bg-water-blue/10 transition-colors">
                 ☕ 話を聞くだけ
             </button>
-            <button onclick="openStrictMail()"
-                class="flex-1 min-h-[52px] rounded-full bg-water-blue text-white font-bold text-[15px] shadow-lg active:scale-95 transition-transform">
-                🔥 応募する
-            </button>
+            <a href="https://lin.ee/TBH2y6U" target="_blank" rel="noopener"
+                class="flex-1 min-h-[52px] flex items-center justify-center gap-1.5 rounded-full bg-line-green text-white font-bold text-[16px] shadow-lg active:scale-95 transition-transform">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                        d="M12 2C6.48 2 2 5.64 2 10.12c0 4.02 3.56 7.38 8.37 8.02.33.07.77.22.88.5.1.26.07.66.03.92l-.14.85c-.04.25-.2.99.87.54 1.07-.45 5.77-3.4 7.87-5.82C21.33 13.54 22 11.93 22 10.12 22 5.64 17.52 2 12 2z" />
+                </svg>
+                LINEで応募
+            </a>
         </div>
     </div>
     <!-- 固定バーの分だけ、ページ末尾に余白を足す -->
