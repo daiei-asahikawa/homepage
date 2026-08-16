@@ -14,8 +14,18 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="採用情報 - 大栄建築設備 有限会社">
-    <meta property="og:description" content="大栄建築設備有限会社の採用情報。配管工、現場管理を募集中。">
+    <meta property="og:url" content="https://daiei-asahikawa.github.io/homepage/recruit.html">
+    <meta property="og:title" content="旭川で配管工スタッフ募集｜未経験OK・年間休日105日 - 大栄建築設備">
+    <meta property="og:description" content="日給9,600円〜（月19〜21万＋手当・賞与年2回）。年間休日105日、残業月10時間以下、出張なし。経験不問、20代・30代歓迎。面接1回・普段着OK、まず話を聞くだけでも歓迎します。">
+    <meta property="og:image" content="https://daiei-asahikawa.github.io/homepage/assets/img/work_scene_01.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://daiei-asahikawa.github.io/homepage/recruit.html">
+    <meta property="twitter:title" content="旭川で配管工スタッフ募集｜未経験OK・年間休日105日 - 大栄建築設備">
+    <meta property="twitter:description" content="日給9,600円〜、年間休日105日、残業月10時間以下、出張なし。経験不問、20代・30代歓迎。">
+    <meta property="twitter:image" content="https://daiei-asahikawa.github.io/homepage/assets/img/work_scene_01.jpg">
+    <link rel="canonical" href="https://daiei-asahikawa.github.io/homepage/recruit.html">
 
     <!-- Structured Data (JobPosting) -->
     <script type="application/ld+json">
@@ -544,8 +554,9 @@
                                     <h3 class="text-lg font-bold text-accent">給与</h3>
                                 </div>
                                 <p class="text-gray-800">日給9,600円〜<br>
-                                    （年収360万〜想定）<br>
-                                    <span class="text-sm text-gray-600">＋手当・賞与年2回</span>
+                                    <span class="font-bold text-water-blue">月収19〜21万円＋手当</span><br>
+                                    （賞与年2回・年収360万〜想定）<br>
+                                    <span class="text-sm text-gray-600">※月収は日給9,600円×月20〜21日で算出した目安です</span>
                                 </p>
                             </div>
 
@@ -831,7 +842,7 @@
                 </div>
             </div>
             <div class="border-t border-gray-600 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 大栄建築設備 有限会社. All rights reserved.</p>
+                <p>&copy; 2026 大栄建築設備 有限会社. All rights reserved.</p>
                 <a href="privacy.html"
                     class="text-sm hover:text-white transition-colors mt-2 inline-block">プライバシーポリシー</a>
             </div>
@@ -941,6 +952,24 @@
             window.location.href = `mailto:d-saiyo@daiei1977.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         }
     </script>
+    <!-- スマホ用・下に固定される応募バー（PCでは非表示） -->
+    <div id="mobile-apply-bar"
+        class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-gray-200 shadow-[0_-4px_20px_rgba(0,0,0,0.08)] px-3 py-3"
+        style="padding-bottom: calc(0.75rem + env(safe-area-inset-bottom));">
+        <div class="flex gap-2">
+            <button onclick="openCasualMail()"
+                class="flex-1 min-h-[52px] rounded-full border-2 border-water-blue text-water-blue font-bold text-[15px] active:bg-water-blue/10 transition-colors">
+                ☕ 話を聞くだけ
+            </button>
+            <button onclick="openStrictMail()"
+                class="flex-1 min-h-[52px] rounded-full bg-water-blue text-white font-bold text-[15px] shadow-lg active:scale-95 transition-transform">
+                🔥 応募する
+            </button>
+        </div>
+    </div>
+    <!-- 固定バーの分だけ、ページ末尾に余白を足す -->
+    <div class="md:hidden" style="height: 84px;"></div>
+
     <script src="assets/js/design.js"></script>
 </body>
 
