@@ -39,8 +39,8 @@
         "name": "大栄建築設備有限会社",
         "value": "RECRUIT-001"
       },
-      "datePosted": "2024-01-01",
-      "validThrough": "2025-12-31",
+      "datePosted": "2026-08-17",
+      "validThrough": "2027-12-31",
       "employmentType": "FULL_TIME",
       "hiringOrganization": {
         "@type": "Organization",
@@ -64,7 +64,8 @@
         "currency": "JPY",
         "value": {
           "@type": "QuantitativeValue",
-          "value": 250000,
+          "minValue": 190000,
+          "maxValue": 210000,
           "unitText": "MONTH"
         }
       }
@@ -231,7 +232,7 @@
 
     <!-- Hero Section -->
     <section class="relative min-h-screen flex items-center justify-center overflow-hidden"
-        style="background-image: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');background-size:cover;background-position:center;">
+        style="background-image: url('./assets/img/work_pipe.jpg');background-size:cover;background-position:center;">
         <div class="absolute inset-0 hero-gradient"></div>
 
         <!-- Floating geometric shapes -->
@@ -396,16 +397,25 @@
                     </div>
                 </div>
             </div>
+
+            <figure class="mt-8 rounded-2xl overflow-hidden shadow-lg ring-1 ring-gray-200">
+                <img src="./assets/img/work_winter.jpg" alt="冬の現場で、掘削した穴の中で配管をつなぐ大栄建築設備のスタッフ"
+                    class="w-full h-64 md:h-96 object-cover" loading="lazy">
+                <figcaption class="bg-white px-5 py-3 text-sm text-gray-500 text-center">
+                    実際の現場です。冬でも、水は待ってくれません。
+                </figcaption>
+            </figure>
         </div>
     </section>
 
     <!-- 4-Koma Manga Section -->
     <section class="py-16 px-4 bg-white">
         <div class="container mx-auto max-w-4xl text-center">
-            <h2 class="text-3xl md:text-4xl font-serif font-bold mb-8">4コマで見る「配管工のリアル」</h2>
-            <div class="mb-8 shadow-lg rounded-lg overflow-hidden border-4 border-gray-100">
-                <img src="./assets/img/manga_01.jpg" alt="配管工のリアル 4コマ漫画 1" class="w-full h-auto mb-4">
-                <img src="./assets/img/manga_02.jpg" alt="配管工のリアル 4コマ漫画 2" class="w-full h-auto">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">4コマで見る「配管工の一日」</h2>
+            <p class="text-gray-600 mb-8">冬の朝はキツい。でも、その穴の先に誰かの生活があります。</p>
+            <div class="max-w-2xl mx-auto mb-8 shadow-xl rounded-2xl overflow-hidden ring-1 ring-gray-200">
+                <img src="./assets/img/manga_02.jpg" alt="4コマ漫画：冬の朝の集合。寒い中で配管作業をやり切り、お客様に感謝されて一日を終えるまで"
+                    class="w-full h-auto" loading="lazy">
             </div>
             <p class="text-xl font-medium text-gray-700">「大変なところも、やりがいも、こんな感じです。」</p>
         </div>
@@ -698,27 +708,9 @@
                             </div>
                         </div>
 
-                        <!-- Casual Application Button -->
-                        <div class="relative group cursor-pointer" onclick="openCasualMail()">
-                            <div
-                                class="relative flex items-center justify-between bg-white border-2 border-dashed border-gray-300 p-6 rounded-xl hover:border-water-blue hover:bg-blue-50/50 transition-all duration-300">
-                                <div class="flex-1">
-                                    <div class="flex items-center mb-1">
-                                        <span class="text-2xl mr-2">☕</span>
-                                        <h3 class="text-lg font-bold text-gray-700">話だけ聞きたい</h3>
-                                    </div>
-                                    <p class="text-sm text-gray-500">まずはカジュアルに相談・質問</p>
-                                </div>
-                                <div
-                                    class="bg-gray-100 text-gray-500 p-3 rounded-full group-hover:bg-water-blue group-hover:text-white transition-colors duration-300">
-                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
-                                        </path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
+                        <p class="text-sm text-gray-500 text-center pt-1">
+                            「まず話だけ聞きたい」もLINEでどうぞ。応募扱いにはしません。
+                        </p>
                     </div>
 
                     <div class="text-center border-t border-gray-100 pt-6">
@@ -979,13 +971,7 @@
             });
         });
 
-        // Mail Application Functions
-        function openCasualMail() {
-            const subject = "【カジュアル相談】";
-            const body = "お名前：\r\n聞きたいこと：";
-            window.location.href = `mailto:d-saiyo@daiei1977.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        }
-
+        // Mail Application Function
         function openStrictMail() {
             const subject = "【求人応募】";
             const body = `【求人応募】
@@ -1019,9 +1005,9 @@
         class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-gray-200 shadow-[0_-4px_20px_rgba(0,0,0,0.08)] px-3 py-3"
         style="padding-bottom: calc(0.75rem + env(safe-area-inset-bottom));">
         <div class="flex gap-2">
-            <button onclick="openCasualMail()"
-                class="w-[38%] min-h-[52px] rounded-full border-2 border-water-blue text-water-blue font-bold text-[14px] active:bg-water-blue/10 transition-colors">
-                ☕ 話を聞くだけ
+            <button onclick="openStrictMail()"
+                class="w-[34%] min-h-[52px] rounded-full border-2 border-water-blue text-water-blue font-bold text-[14px] active:bg-water-blue/10 transition-colors">
+                ✉ メール
             </button>
             <a href="https://lin.ee/TBH2y6U" target="_blank" rel="noopener"
                 class="flex-1 min-h-[52px] flex items-center justify-center gap-1.5 rounded-full bg-line-green text-white font-bold text-[16px] shadow-lg active:scale-95 transition-transform">
@@ -1029,7 +1015,7 @@
                     <path
                         d="M12 2C6.48 2 2 5.64 2 10.12c0 4.02 3.56 7.38 8.37 8.02.33.07.77.22.88.5.1.26.07.66.03.92l-.14.85c-.04.25-.2.99.87.54 1.07-.45 5.77-3.4 7.87-5.82C21.33 13.54 22 11.93 22 10.12 22 5.64 17.52 2 12 2z" />
                 </svg>
-                LINEで応募
+                LINEで応募・相談
             </a>
         </div>
     </div>
