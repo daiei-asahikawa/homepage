@@ -1,0 +1,6 @@
+# 拡張子なしの住所で来た人を、.html付きの正式な住所へ案内する（GitHub Pages時代はどちらでも開いていたため）
+/index    /              301
+/service  /service.html  301
+/access   /access.html   301
+/recruit  /recruit.html  301
+/privacy  /privacy.html  301

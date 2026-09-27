@@ -1,0 +1,16 @@
+{
+  // 大栄建築設備HP（Cloudflare Workers・静的配信）
+  // 公開前に ./build.sh で dist を作り直すこと
+  "name": "daiei-hp",
+  "main": "src/index.js",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "html_handling": "none"
+  },
+  "routes": [
+    { "pattern": "daiei-asahikawa.com", "custom_domain": true },
+    { "pattern": "www.daiei-asahikawa.com", "custom_domain": true }
+  ]
+}
