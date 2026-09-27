@@ -1,6 +1,7 @@
 /* Custom Cursor */
 @media (pointer: fine) {
-    body {
+    /* 矢印を消すのは、カーソル演出を有効にしたとき（design.js の USE_CUSTOM_CURSOR）だけ */
+    body.custom-cursor {
         cursor: none;
     }
 

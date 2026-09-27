@@ -1,0 +1,125 @@
+/* 金継ぎ 修理CSS（大栄建築設備HP）— 読みやすさと色・字の大きさの揃え
+   2026-09-27 8月版に組み込み（6月版の写しで仕上げた第4版＋8月版で増えた LINE・金色・緑の分）
+   全ページの <head> の最後で読み込む。
+   頭に html を付けて強めにしてある（Tailwind CDN がページを開くたびに後から規則を足すため、同じ強さだと負ける）
+   色は rgb(r g b / var(--tw-*-opacity, 1)) で書く（ベタ書きすると bg-opacity-10 等の「透け」を潰す＝6月版の第1版で踏んだ） */
+
+/* ── 1. 読めない文字: 会社の青 #0284C7 を、同じ色味のまま明るさだけ4.4%深く #0275B1(=rgb 2 117 177)。
+         白い字の地にしても、淡い地の上の字にしても床4.5に届く ── */
+html .bg-water-blue,
+html .group.is-active .group-\[\.is-active\]\:bg-water-blue,
+html .group:hover .group-hover\:bg-water-blue { background-color: rgb(2 117 177 / var(--tw-bg-opacity, 1)); }
+html .text-water-blue,
+html .hover\:text-water-blue:hover,
+html .group:hover .group-hover\:text-water-blue { color: rgb(2 117 177 / var(--tw-text-opacity, 1)); }
+html .border-water-blue,
+html .hover\:border-water-blue:hover { border-color: rgb(2 117 177 / var(--tw-border-opacity, 1)); }
+html .from-water-blue { --tw-gradient-from: rgb(2 117 177 / 1) var(--tw-gradient-from-position); }
+/* 暗い地の上の青い字だけは、深くすると逆に沈む → 会社のもう1つの色 light-blue #38BDF8 に。場所は2つに限る:
+   ・最初の画面（濃い写真＋紺の膜）の中
+   ・ヘッダーが透明な間（スクロールで白い帯＝.glass-morphism になったら元の青へ戻る） */
+html section.min-h-screen .text-water-blue,
+html #header:not(.glass-morphism) #logo .text-water-blue,
+html #header:not(.glass-morphism) ul.md\:flex .text-water-blue { color: #7DD3FC; }
+/* ↑ light-blue #38BDF8 の明るい版。事業内容の最初の画面「安心と快適」がスマホ幅で #38BDF8 だと比3.8（床4.5）だったため */
+
+/* 差し色は色味を保って濃さだけ上げる（注意の赤・チェックの緑・情報の青の意味を消さない）
+   緑は「経験不問」も「LINEの場合：」も同じ深い緑 #15803D にそろえる */
+html .text-red-500,
+html .text-red-600 { color: #B91C1C; }
+html .text-green-500,
+html .text-green-600,
+html .text-line-green { color: #15803D; }
+html .text-blue-500 { color: #2563EB; }
+/* 白地の上の薄いグレーの字（gray-400 比2.54）→ 1段濃い gray-500（ページに既にある色）。
+   足元（紺の地）の gray-400 は明るいままでいいので、節（section）の中だけ */
+html section .text-gray-400 { color: #6B7280; }
+
+/* ── 1-2. LINEの緑・金色の札（8月版）: 地の色はそのまま、字を濃い紺 accent に ──
+   LINEの緑 #06C755 は公式の色なので変えない。白い字だと比2.26で読めない → 紺の字で8.35（ホバーの緑でも5.88）
+   金色 #B49B66 の札も同じ（白2.69 → 紺7.01） */
+html .bg-line-green.text-white,
+html .bg-line-green .text-white { color: #0B1120; }
+html .bg-line-green .text-white\/90 { color: #0B1120; }
+html .bg-gold.text-white { color: #0B1120; }
+
+/* ── 2. 似て非なる色: 名前のある役割色へ寄せる ──
+   文字: 灰色の段（gray-600/700）→ 本文色 primary-text #334155 ／ 濃い灰（gray-800/900）→ accent #0B1120
+   淡い囲み（gray-50/100・blue-50・purple-50）→ 節の地 section-bg #F1F5F9
+   明るい枠線（gray-100・blue-100・gray-300）→ 既定の枠線 #E5E7EB ／ 暗い枠線（足元の区切り gray-600）→ #334155
+   節の地（section-bg と白）の交互はセクションの拍なので統合しない。注意書きの琥珀色（amber）も役割があるので残す */
+html .text-gray-600,
+html .text-gray-700 { color: rgb(51 65 85 / var(--tw-text-opacity, 1)); }
+html .text-gray-800,
+html .text-gray-900 { color: rgb(11 17 32 / var(--tw-text-opacity, 1)); }
+html .bg-gray-50,
+html .bg-gray-100,
+html .bg-blue-50,
+html .bg-purple-50 { background-color: rgb(241 245 249 / var(--tw-bg-opacity, 1)); }
+html .border-gray-100,
+html .border-blue-100,
+html .border-gray-300 { border-color: rgb(229 231 235 / var(--tw-border-opacity, 1)); }
+html .border-gray-600 { border-color: rgb(51 65 85 / var(--tw-border-opacity, 1)); }
+
+/* ── 3. 文字サイズの段: 役割の中で近い値を寄せる ──
+   見出し(h3〜h6): 18 と 24 の2段 ／ 本文(p): 14・16・20 の3段 ／ ボタン: 16（ロゴの社名2段は会社の顔なので触らない） */
+html :is(h3, h4, h5, h6)[class] { font-size: 18px; line-height: 1.5; }
+html :is(h3, h4, h5, h6).text-2xl,
+html :is(h3, h4, h5, h6).text-3xl { font-size: 24px; line-height: 1.4; }
+@media (min-width: 768px) {
+  html :is(h3, h4, h5, h6).md\:text-3xl { font-size: 24px; }
+}
+html p.text-lg { font-size: 16px; }
+@media (min-width: 768px) {
+  /* 写真の上（最初の画面）の文は縮めない: 24px未満になると「普通の字」扱いで床が3.0→4.5に上がり、読みにくい側に落ちる */
+  html section:not(.min-h-screen) p.md\:text-2xl { font-size: 20px; }
+}
+html a.text-lg,
+html a.text-sm { font-size: 16px; }
+
+/* ── 4. 角丸は3種へ（8・12・丸）: 16 を 12 に ── */
+html .rounded-2xl { border-radius: 12px; }
+
+/* ── 5. カーソルの飾り（いまは design.js で止めてある）: 戻したときのために重なり順と色だけ整えておく ── */
+html .cursor-dot,
+html .cursor-outline { z-index: 100; }
+html .cursor-dot { background-color: #0275B1; }
+html .cursor-outline { border-color: rgba(2, 117, 177, 0.8); }
+
+/* ── 6. 最初の画面（写真の上）の字を読めるように: 写真全体は暗くしない（現場を見せたい＝見立て問い2）──
+   ・下のほうの小さい字は、わざと半透明（80〜90%）にしてあった → 普通の白に戻す
+   ・枠線だけのボタン（RECRUIT・募集要項を見る など）の下に、うっすら暗い下地を敷く（押したときの白はそのまま）
+   ・トップの「SCROLL」の印は全部の幅で隠す（写真の明るい所で比1.95・スマホではボタンに重なる・既製品の型 scroll-cue） */
+html section.min-h-screen p.opacity-80,
+html section.min-h-screen p.opacity-90 { opacity: 1; }
+html section.min-h-screen .text-white\/80 { color: #FFFFFF; }
+html section.min-h-screen a.border-white:not(:hover) { background-color: rgb(11 17 32 / 0.35); }
+html .hero-slideshow div.bottom-10.cursor-pointer { display: none; }
+
+/* ── 7. 採用の「メールで応募したい方はこちら」の小さいラベル 12px → 16px（字の段を1つ減らす） ── */
+html section span.text-xs.text-gray-400 { font-size: 16px; }
+
+/* ── 8. トップの残り（8月版） ──
+   ・社歌の動画の下の小さい字（gray-500・淡いグラデの地で比4.49）→ 本文色 primary-text へ
+   ・スマホ幅の最初の画面: 右下の膜が薄く（40%）、明るい銀色の壁の上で白い字が比3.1 → スマホ幅だけ65%に。
+     写真全体は暗くしない（パソコン・タブレットは今のまま） */
+html section p.text-gray-500 { color: rgb(51 65 85 / var(--tw-text-opacity, 1)); }
+@media (max-width: 767px) {
+  html .hero-slideshow .to-water-blue\/40 { --tw-gradient-to: rgb(2 117 177 / 0.65) var(--tw-gradient-to-position); }
+}
+
+/* ── 9. トップの最初の画面（写真が4枚切り替わる）: どの写真のときでも字が読めるように ──
+   写真を1枚ずつ止めて測った（kintsugi field/daiei8/slide-test.py）。写真全体は暗くせず、
+   ・文字が乗る真ん中だけ、ほんのり暗く（まわりの現場写真はそのまま見える）
+   ・一番下の小さい字「未経験からのスタート歓迎／2名募集中」は、暗い半透明の札に乗せる */
+html .hero-slideshow > .mix-blend-multiply::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(ellipse 70% 60% at 50% 55%, rgb(11 17 32 / 0.5) 0%, rgb(11 17 32 / 0) 100%);
+}
+html .hero-slideshow p.mt-6 {
+  display: inline-block; padding: 4px 16px; position: relative; isolation: isolate;
+}
+/* 札の下地は字の後ろの層に敷く（字そのものに下地を付けると、画素検査が下地を数えず写真を見てしまう＝9/27に確認） */
+html .hero-slideshow p.mt-6::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; border-radius: 999px; background-color: rgb(11 17 32 / 0.7);
+}

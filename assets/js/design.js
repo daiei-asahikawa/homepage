@@ -1,10 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Custom Cursor Logic
+    // 2026-09-27: 止めた（いつもの矢印に戻す）。矢印が消えると押せる所が分かりにくく、設備会社の語り口とも合わないため（金継ぎ 見立て 問い7）。
+    // 戻すときは USE_CUSTOM_CURSOR を true にする（design.css 側は body.custom-cursor のときだけ矢印を消す）
+    const USE_CUSTOM_CURSOR = false;
     const cursorDot = document.createElement('div');
     const cursorOutline = document.createElement('div');
     
     // Only enable on devices with fine pointer (mouse)
-    if (window.matchMedia('(pointer: fine)').matches) {
+    if (USE_CUSTOM_CURSOR && window.matchMedia('(pointer: fine)').matches) {
+        document.body.classList.add('custom-cursor');
         cursorDot.className = 'cursor-dot';
         cursorOutline.className = 'cursor-outline';
         document.body.appendChild(cursorDot);
